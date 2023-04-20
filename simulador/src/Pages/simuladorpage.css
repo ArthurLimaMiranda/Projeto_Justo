@@ -1,0 +1,398 @@
+.Desktop{
+    /* Background 1*/
+    box-sizing: border-box;
+
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #377EB8;
+    border: 1px solid #00396A;
+
+    
+}
+
+.Desktop h1{
+
+
+    /* Rentângulo do Simulador de Vendas */
+
+
+    position: absolute;
+    width: 872px;
+    height: 80px;
+    left: 438px;
+    top: 62px;
+
+    background: #00396A;
+    border-radius: 20px; 
+}
+
+.simuladordevendas{
+
+    /* Simulador de Vendas*/
+    position: absolute;
+    width: 382px;
+    height: 0px;
+    left: 280px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    /* identical to box height, or 60% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    
+}
+
+.Desktop h2{
+    /*Background 2*/
+    position: absolute;
+    width: 870px;
+    height: 830px;
+    left: 440px;
+    top: 170px;
+
+    background: #4E94CD;
+    border-radius: 20px;
+    
+} 
+
+.valordoproduto{
+
+    /*caixa azul*/
+    position: absolute;
+    /*width: 180px;
+    height: 100px;
+    left: 300px;
+    top: 215px;*/
+
+    background: #00396A;
+    border-radius: 20px;
+
+    /*Valor do Produto*/
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    left: 30px;
+    top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.bandeiradocartao{
+    
+    /* botão azul */
+
+
+    position: absolute;
+    /*width: 180px;
+    height: 100px;
+    left: 460px;
+    top: 412px;*/
+
+    background: #00396A;
+    border-radius: 20px;
+
+    /* Bandeira do Cartão */
+
+
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    left: 30px;
+    top: 230px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.taxadamaquininha{
+
+    /* botão azul */
+
+
+    position: absolute;
+    /*width: 180px;
+    height: 100px;
+    left: 460px;
+    top: 412px;*/
+
+    background: #00396A;
+    border-radius: 20px;
+    
+    /* Taxa da Maquininha */
+
+
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    left: 500px;
+    top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.tabela{
+
+    /*Tabela*/
+
+    position: absolute;
+    width: 809px;
+    height: 351px;
+    left: 30px;
+    top: 400px;
+
+    background: #00396A;
+    border-radius: 10px;
+}
+
+.linha1{
+
+    /*Linha 1*/
+
+    position: absolute;
+    width: 804px;
+    height: 0px;
+    left: 30px;
+    top: 487px;
+
+    border: 3px solid #FFFFFF;
+}
+
+.linha2{
+
+    /*Linha 2*/
+
+    position: absolute;
+    width: 804px;
+    height: 0px;
+    left: 30px;
+    top: 574px;
+
+    border: 3px solid #FFFFFF;
+}
+
+.linha3{
+
+    /*Linha 3*/
+
+    position: absolute;
+    width: 804px;
+    height: 0px;
+    left: 30px;
+    top: 661px;
+
+    border: 3px solid #FFFFFF;
+}
+
+.coluna1{
+
+    /*Coluna1*/
+
+    position: absolute;
+    width: 349px;
+    height: 0px;
+    left: 120px;
+    top: 573px;
+
+    border: 3px solid #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+.coluna2{
+
+    /*Coluna2*/
+
+    position: absolute;
+    width: 349px;
+    height: 0px;
+    left: 400px;
+    top: 573px;
+
+    border: 3px solid #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+.formadepagamento{
+
+    /* Forma de Pagamento */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 70px;
+    top: 415px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.valorasercobrado{
+
+    /* Valor a ser Cobrado */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 340px;
+    top: 415px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.valoraserrecebido{
+
+    /* Valor a ser Recebido */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 620px;
+    top: 415px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.debito{
+
+    /* Débito */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 110px;
+    top: 500px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.creditoavista{
+
+    /* Crédito à Vista */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 70px;
+    top: 590px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.creditoparcelado{
+
+    /* Crédito Parcelado */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 70px;
+    top: 675px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+

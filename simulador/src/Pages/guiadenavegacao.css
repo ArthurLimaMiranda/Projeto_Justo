@@ -1,0 +1,299 @@
+.Desktop h3{
+
+    /* Guia de Navegação */
+
+    position: absolute;
+    width: 344px;
+    height: 1020px;
+    left: 0px;
+    top: -18px;
+
+    background: #00396A;
+    border-radius: 30px;
+}
+
+.injusta{
+
+    /* Injusta */
+
+    position: absolute;
+    width: 163px;
+    height: 24px;
+    left: 91px;
+    top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 24px;
+    /* identical to box height, or 60% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.traço{
+
+    /* Traço */
+
+    position: absolute;
+    width: 281px;
+    height: 1px;
+    left: 32px;
+    top: 135px;
+
+    background: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bloco1{
+
+    /* Bloco1 */
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 0px;
+    top: 222px;
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco2{
+
+    /* Bloco2 */
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 0px;
+    top: 327px;
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco3{
+
+    /* Bloco3 */
+
+    
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 0px;
+    top: 432px;
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco4{
+
+    /* Bloco4 */
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 0px;
+    top: 537px;
+    
+    background: #377EB8;
+}
+
+.bloco5{
+
+    /* Bloco5 */
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 0px;
+    top: 642px;
+    
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco6{
+
+    /* Bloco6 */
+
+    position: absolute;
+    width: 344px;
+    height: 56px;
+    left: 0px;
+    top: 747px;
+    
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.telainicial{
+
+    
+
+    /* Tela inicial */
+
+
+    position: absolute;
+    width: 96px;
+    height: 29px;
+    left: 79px;
+    top: 238px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #00396A;
+
+}
+
+.saldodevendas{
+
+   /* Saldo de vendas */
+
+
+    position: absolute;
+    width: 150px;
+    height: 29px;
+    left: 79px;
+    top: 343px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #00396A; 
+}
+
+.lançamentos{
+
+    /* Lançamentos */
+
+
+    position: absolute;
+    width: 122px;
+    height: 29px;
+    left: 79px;
+    top: 446px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #00396A;
+
+}
+
+.simulaçoes{
+
+    /* Simulações */
+
+
+    position: absolute;
+    width: 109px;
+    height: 29px;
+    left: 79px;
+    top: 551px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #00396A;
+}
+
+.boleto{
+
+   /* Gerar boleto */
+
+
+    position: absolute;
+    width: 111px;
+    height: 29px;
+    left: 79px;
+    top: 655px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #00396A; 
+}
+
+.emprestimo{
+
+/* Empréstimo */
+
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 79px;
+top: 760px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 24px;
+/* or 120% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #00396A;
+}
+    
+.seta1{
+
+    /* Seta1 */
+
+    /* Vector */
+
+
+
+
+}
