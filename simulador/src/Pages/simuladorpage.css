@@ -169,248 +169,29 @@
 
 }
 
-.tabela{
-
-    /*Tabela*/
-
-    position: absolute;
-    width: 809px;
-    height: 351px;
-    left: 30px;
-    top: 400px;
-
-    background: #00396A;
-    border-radius: 10px;
-}
-
-.linha1{
-
-    /*Linha 1*/
-
-    position: absolute;
-    width: 804px;
-    height: 0px;
-    left: 30px;
-    top: 487px;
-
-    border: 3px solid #FFFFFF;
-}
-
-.linha2{
-
-    /*Linha 2*/
-
-    position: absolute;
-    width: 804px;
-    height: 0px;
-    left: 30px;
-    top: 574px;
-
-    border: 3px solid #FFFFFF;
-}
-
-.linha3{
-
-    /*Linha 3*/
-
-    position: absolute;
-    width: 804px;
-    height: 0px;
-    left: 30px;
-    top: 661px;
-
-    border: 3px solid #FFFFFF;
-}
-
-.coluna1{
-
-    /*Coluna1*/
-
-    position: absolute;
-    width: 349px;
-    height: 0px;
-    left: 120px;
-    top: 573px;
-
-    border: 3px solid #FFFFFF;
-    transform: rotate(-90deg);
-}
-
-.coluna2{
-
-    /*Coluna2*/
-
-    position: absolute;
-    width: 349px;
-    height: 0px;
-    left: 400px;
-    top: 573px;
-
-    border: 3px solid #FFFFFF;
-    transform: rotate(-90deg);
-}
-
-.formadepagamento{
-
-    /* Forma de Pagamento */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 70px;
-    top: 415px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-}
-
-.valorasercobrado{
-
-    /* Valor a ser Cobrado */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 340px;
-    top: 415px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-}
-
-.valoraserrecebido{
-
-    /* Valor a ser Recebido */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 620px;
-    top: 415px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-}
-
-.debito{
-
-    /* Débito */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 110px;
-    top: 500px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-}
-
-.creditoavista{
-
-    /* Crédito à Vista */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 70px;
-    top: 590px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-}
-
-.creditoparcelado{
-
-    /* Crédito Parcelado */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 70px;
-    top: 675px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-}
-
 .rs{
 
     /*Input valor do Produto*/
 
-
-    
     box-sizing: border-box;
 
     position: absolute;
     width: 119px;
     height: 49px;
-    left: 301px;
-    top: 80px;
+    left: 300px;
+    top: 81px;
 
     background: #FFFFFF;
     border: 3px solid #00396A;
     border-radius: 0px 20px 20px 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #00396A;
+    
     
 }
 
@@ -430,6 +211,14 @@
     background: #FFFFFF;
     border: 3px solid #00396A;
     border-radius: 20px 0px 0px 20px;
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    line-height: 23px;
+    color: #00396A;
 }
 
 .bandeira{
@@ -448,8 +237,17 @@
     background: #FFFFFF;
     border: 3px solid #00396A;
     border-radius: 20px; 
-}
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 23px;
+    color: #00396A;
+
+    
+}
 
 .section1{
 
@@ -479,7 +277,7 @@
     width: 25px;
     height: 23px;
     left: 270px;
-    top: 77px;
+    top: 74px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -517,7 +315,7 @@
     width: 18px;
     height: 28px;
     left: 806px;
-    top: 70px;
+    top: 67px;
 
     font-family: 'Roboto';
     font-style: normal;

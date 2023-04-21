@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import "./simuladorpage.css"
 import "./guiadenavegacao.css"
+import "./tabela.css"
 
 
 
@@ -18,6 +19,8 @@ export function Home() {
           <p className='valordoproduto'>Valor do Produto</p>
           <p className='bandeiradocartao'>Bandeira do Cartão</p>
           <p className='taxadamaquininha'>Taxa da Maquininha</p>
+
+          {/*Tabela e seus Elementos*/}
           <p className='tabela'>{/*Tabela*/}</p>
           <p className='linha1'>{/*linha1*/}</p>
           <p className='linha2'>{/*linha2*/}</p>
@@ -30,6 +33,14 @@ export function Home() {
           <p className='debito'>Débito</p>
           <p className='creditoavista'>Crédito à Vista</p>
           <p className='creditoparcelado'>Crédito Parcelado</p>
+          <input type='text' placeholder='R$...' className='espaço1'/>
+          <input type='text' placeholder='R$...' className='espaço2'/>
+          <input type='text' placeholder='R$...' className='espaço3'/>
+          <input type='text' placeholder='R$...' className='espaço4'/>
+          <input type='text' placeholder='R$...' className='espaço5'/>
+          <input type='text' placeholder='R$...' className='espaço6'/>
+
+
           <input type='text' className='rs'/>
           <input type='text' className='taxa'/>
           <input type='text' className='bandeira'/>
