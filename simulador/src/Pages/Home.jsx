@@ -3,14 +3,17 @@ import "./simuladorpage.css"
 import "./guiadenavegacao.css"
 
 
+
 export function Home() {
 
 
   return (
     <div className='Desktop'>
+      
       <h1>
         <p className="simuladordevendas">Simulador de Vendas</p>
       </h1>
+      
       <h2>{/*Background 2*/}
           <p className='valordoproduto'>Valor do Produto</p>
           <p className='bandeiradocartao'>Bandeira do Cartão</p>
@@ -27,8 +30,16 @@ export function Home() {
           <p className='debito'>Débito</p>
           <p className='creditoavista'>Crédito à Vista</p>
           <p className='creditoparcelado'>Crédito Parcelado</p>
-
+          <input type='text' className='rs'/>
+          <input type='text' className='taxa'/>
+          <input type='text' className='bandeira'/>
+          <p className='section1'>{/*section1*/} </p>
+          <p className='section2'>{/*section2*/} </p>
+          <p className='money'>R$</p>
+          <p className='juros'>%</p>
+      
       </h2> 
+
       <h3>{/*Guia de Navegação*/}
           <p className='injusta'>Injusta</p>
           <p className='traço'>{/*traço*/}</p>
@@ -44,12 +55,7 @@ export function Home() {
           <p className='simulaçoes'>Simulações</p>
           <p className='boleto'>Gerar Boleto</p>
           <p className='emprestimo'>Empréstimo</p>
-          <p className='seta1'>{/*seta1*/}</p>
-          <p className='seta2'>{/*seta2*/}</p>
-          <p className='seta3'>{/*seta3*/}</p>
-          <p className='seta4'>{/*seta4*/}</p>
-          <p className='seta5'>{/*seta5*/}</p>
-          <p className='seta6'>{/*seta6*/}</p>
+          
       </h3>
     </div>
     
