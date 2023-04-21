@@ -17,8 +17,9 @@ export function Home() {
       
       <h2>{/*Background 2*/}
           <p className='valordoproduto'>Valor do Produto</p>
-          <p className='bandeiradocartao'>Bandeira do Cartão</p>
+          <p className='pagamento'>Forma de Pagamento</p>
           <p className='taxadamaquininha'>Taxa da Maquininha</p>
+          <p className='ndeparcelas'>Nº de Parcelas</p>
 
           {/*Tabela e seus Elementos*/}
           <p className='tabela'>{/*Tabela*/}</p>
@@ -40,14 +41,18 @@ export function Home() {
           <input type='text' placeholder='R$...' className='espaço5'/>
           <input type='text' placeholder='R$...' className='espaço6'/>
 
-
+          {/*Inputs e seus Elementos*/}
           <input type='text' className='rs'/>
           <input type='text' className='taxa'/>
-          <input type='text' className='bandeira'/>
+          <input type='text' className='pagamentos'/>
+          <input type='text' className='parcela'/>
           <p className='section1'>{/*section1*/} </p>
           <p className='section2'>{/*section2*/} </p>
+          <p className='section3'>{/*section3*/} </p>
           <p className='money'>R$</p>
           <p className='juros'>%</p>
+          <p className='vezes'>X</p>
+
       
       </h2> 
 

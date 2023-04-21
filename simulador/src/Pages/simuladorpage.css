@@ -98,7 +98,7 @@
 
 }
 
-.bandeiradocartao{
+.pagamento{
     
     /* botão azul */
 
@@ -169,6 +169,41 @@
 
 }
 
+.ndeparcelas{
+
+    /* botão azul */
+
+
+    position: absolute;
+    /*width: 180px;
+    height: 100px;
+    left: 460px;
+    top: 412px;*/
+
+    background: #00396A;
+    border-radius: 20px;
+    
+    /* Nº de Parcelas */
+
+
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    left: 460px;
+    top: 230px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
 .rs{
 
     /*Input valor do Produto*/
@@ -188,7 +223,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 23px;
     color: #00396A;
     
@@ -215,15 +250,15 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
     line-height: 23px;
     color: #00396A;
 }
 
-.bandeira{
+.pagamentos{
 
-    /* Rectangle 5 */
+    /* Input de Forma de Pagamento */
 
 
     box-sizing: border-box;
@@ -241,12 +276,36 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     line-height: 23px;
     color: #00396A;
 
     
+}
+
+.parcela{
+
+    /*Input Nº de Parcelas*/
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 119px;
+    height: 49px;
+    left: 677px;
+    top: 280px;
+    background: #FFFFFF;
+    border: 3px solid #00396A;
+    border-radius: 20px 0px 0px 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    line-height: 23px;
+    color: #00396A;
 }
 
 .section1{
@@ -316,6 +375,42 @@
     height: 28px;
     left: 806px;
     top: 67px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.section3{
+
+    /* Section 3 */
+
+
+    position: absolute;
+    width: 44px;
+    height: 49px;
+    left: 796px;
+    top: 256px;
+
+    background: #00396A;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.vezes{
+
+    /* X */
+
+
+    position: absolute;
+    width: 18px;
+    height: 28px;
+    left: 805px;
+    top: 266px;
 
     font-family: 'Roboto';
     font-style: normal;
