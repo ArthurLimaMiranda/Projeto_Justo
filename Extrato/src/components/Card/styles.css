@@ -1,0 +1,31 @@
+.card {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 150px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card strong {
+    background-color: white;
+}
+
+.content strong {
+    font-size: 25px;
+}
+
+#value {
+    color: green;
+}
