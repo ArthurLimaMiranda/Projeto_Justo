@@ -1,0 +1,144 @@
+.Desktop{
+    /* Fundo */
+
+
+position: absolute;
+width: 1728px;
+height: 1117px;
+
+background: #377EB8;
+
+
+}
+
+.Login{
+     /* login: */
+
+
+position: absolute;
+width: 160px;
+height: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #00396A;
+
+
+}
+
+.Caixa1{
+    /* Rectangle 1 */
+
+
+position: absolute;
+width: 500px;
+height: 80px;
+
+background: #F5F5F5;
+
+
+}
+
+.Senha{
+    /* senha: */
+
+
+position: absolute;
+width: 132px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #00396A;
+
+
+}
+
+.Caixa2{
+    /* Rectangle 2 */
+
+
+position: absolute;
+width: 500px;
+height: 80px;
+
+background: #F5F5F5;
+
+
+}
+
+.Botao1{
+    /* Rectangle 3 */
+
+
+position: absolute;
+width: 500px;
+height: 90px;
+
+background: #00396A;
+
+
+}
+
+.Entrar{
+    /* entrar */
+
+
+position: absolute;
+width: 120px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #F5F5F5;
+
+
+}
+
+.Botao2{
+    /* Rectangle 4 */
+
+
+position: absolute;
+width: 500px;
+height: 90px;
+
+background: #00396A;
+
+
+}
+
+.Cadatrar{
+    /* cadastrar */
+
+
+position: absolute;
+width: 189px;
+height: 48px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #F5F5F5;
+
+
+}

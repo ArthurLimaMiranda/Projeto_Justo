@@ -27,23 +27,28 @@ function Index() {
     setCards(prevState => [...prevState, newCard]);
 
     //(classe=='Despesas') ? '/despesas/1' : '/recebiveis/1'
-    fetch('/despesas/1', {
+    fetch('http://localhost:3000/despesas/1', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({newCard})
+      body: JSON.stringify({
+        code: time.toLocaleTimeString("pt-br")+time.getMilliseconds(),
+        modoDePagamento: modoPag,
+        valor: val,
+        dataDeDebito: dataD,
+        classe: classe,
+        dataDeCriacao: formattedTime
+      })
     })
-    .then(response => {
-      // handle response
-    })
-    .catch(error => {
-    });
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
   }
 
 
   useEffect(() => {
-    fetch('/despesas')
+    fetch('http://localhost:3000/despesas')
     .then(response => response.json())
     .then(data => {
       console.log(data);

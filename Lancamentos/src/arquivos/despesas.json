@@ -2,19 +2,11 @@
   "records": [
     {
       "id": 1,
-      "despesas": [
-        {
-
-        }
-      ]
+      "despesas": []
     },
     {
       "id": 2,
-      "despesas": [
-        {
-          
-        }
-      ]
+      "despesas": []
     }
   ]
 }

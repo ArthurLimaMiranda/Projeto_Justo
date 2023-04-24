@@ -11,7 +11,7 @@ routes.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route exact path='extrato' static element={<Extrato />} />
+        <Route exact path='/' static element={<Extrato />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
