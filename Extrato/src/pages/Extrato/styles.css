@@ -5,5 +5,10 @@
 }
 
 .screen {
+    position: absolute;
+    height: 100%;
+    width: 85%;
+
     background-color: rgb(13, 166, 226);
+    margin-left: 300px;
 }

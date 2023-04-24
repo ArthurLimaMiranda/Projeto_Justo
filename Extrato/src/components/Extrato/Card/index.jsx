@@ -1,6 +1,6 @@
 import './styles.css'
 
-export function Card() {
+export default function Card() {
     return(
         <div className="card">
             <strong>??/??/????</strong>

@@ -3,7 +3,7 @@ import {FaArrowLeft} from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
 import {FaEye} from "react-icons/fa";
 
-export function Header() {
+export default function Header() {
 
     return (
         <div className="header">
