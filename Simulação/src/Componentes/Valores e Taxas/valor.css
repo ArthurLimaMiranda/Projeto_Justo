@@ -1,0 +1,61 @@
+
+.Vdebito{
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 820px;
+    top: 720px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.Vcredito{
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 820px;
+    top: 810px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.Vparcelado{
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 820px;
+    top: 900px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}

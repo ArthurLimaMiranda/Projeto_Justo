@@ -1,11 +1,60 @@
 import { useState } from 'react'
 import "./simuladorpage.css"
-import "./guiadenavegacao.css"
+import "./guiadenavegação.css"
 import "./tabela.css"
+
+import { Valor } from"../Componentes/Valores e Taxas/index";
+
 
 
 
 export function Home() {
+
+  const [Voriginal, setVoriginal] = useState("");
+
+  const [Juros, setJuros] = useState("");
+
+  const [Parcelas, setParcelas] = useState("");
+
+  const [Forma, setForma] = useState("");
+
+  var debito = parseFloat(Voriginal) + parseFloat(Voriginal*(Juros/100));
+
+  var credito = parseFloat(Voriginal)+ parseFloat(Voriginal*(Juros/100));
+
+  var vfinal = parseFloat(Voriginal*(1 + Juros/100)**Parcelas);
+
+  var valores = new Array();
+
+
+  function valorcobrado(Forma){
+
+      switch(Forma){
+
+        case "debito" :         
+         valores[0] = debito
+         valores[1] = 0;
+         valores[2] = 0;
+         return valores;        
+
+        case "credito a vista" :      
+          valores[0] = 0;
+          valores[1] = credito;
+          valores[2] = 0;
+          return valores;
+         
+
+        case "credito parcelado":         
+          valores[0] = 0;
+          valores[1] = 0;
+          valores[2] = vfinal;
+          return valores;
+          
+
+      }
+  }
+
+  valorcobrado(Forma);
 
 
   return (
@@ -34,18 +83,15 @@ export function Home() {
           <p className='debito'>Débito</p>
           <p className='creditoavista'>Crédito à Vista</p>
           <p className='creditoparcelado'>Crédito Parcelado</p>
-          <input type='text' placeholder='R$...' className='espaço1'/>
-          <input type='text' placeholder='R$...' className='espaço2'/>
-          <input type='text' placeholder='R$...' className='espaço3'/>
-          <input type='text' placeholder='R$...' className='espaço4'/>
-          <input type='text' placeholder='R$...' className='espaço5'/>
-          <input type='text' placeholder='R$...' className='espaço6'/>
+          <p className='espaço1'></p>
+          
+          
 
           {/*Inputs e seus Elementos*/}
-          <input type='text' className='rs'/>
-          <input type='text' className='taxa'/>
-          <input type='text' className='pagamentos'/>
-          <input type='text' className='parcela'/>
+          <input type='number' className='rs' onChange={e => setVoriginal(e.target.value)}/>
+          <input type='number' className='taxa'onChange={e => setJuros(e.target.value)} />
+          <input type='text' className='pagamentos' onChange={e => setForma(e.target.value)}/>
+          <input type='number' className='parcela' onChange={e => setParcelas(e.target.value)}/>
           <p className='section1'>{/*section1*/} </p>
           <p className='section2'>{/*section2*/} </p>
           <p className='section3'>{/*section3*/} </p>
@@ -73,9 +119,10 @@ export function Home() {
           <p className='emprestimo'>Empréstimo</p>
           
       </h3>
+
+    <Valor debito= {valores[0]} creditovista = {valores[1]} creditoparcelado = {valores[2]} />
+
     </div>
     
   )
 }
-
-
