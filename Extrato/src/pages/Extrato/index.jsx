@@ -1,21 +1,66 @@
-import Header from '../../components/Extrato/Header/index'
-import Card from '../../components/Extrato/Card/index'
+import { useState } from 'react'
+import Header from '../../components/Extrato/Header'
+import Card from '../../components/Extrato/Card/index.jsx'
 import './styles.css'
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
 
-export default function Extrato() {
+function Extrato() {
+  const [description, setDescription] = useState();
+  const [number, setNumber] = useState();
+  const [content, setContent] = useState([]);
+  const [saldo, setSaldo] = useState(0);
+
+  function handleAddCard(){
+    const newCard = {
+      name: description,
+      amount: number, 
+    };
+
+    setContent(prevState => [...prevState, newCard]);
+    setSaldo((num) => num += parseInt(number));
+  }
   
   return (
     <>
       <Sidebar />
-      <div className="screen">
-        <div className="container">
-          <Header />
+      <div className="container">
+        <Header 
+          balance={saldo}
+        />
+        <div className='form'>
+          <div className='info'>
+            <label htmlFor='1'>Descrição:</label>
+            <input
+              id='1' 
+              type="text" 
+              placeholder="Digite o nome"
+              onChange={e => setDescription(e.target.value)}
+            />
+          </div>
+          <br></br>
+          <div className='info'>
+            <label>Entrada/saída:</label>
+            <input
+              type='number'
+              placeholder='(Saída: valor negativo)'
+              onChange={e => setNumber(e.target.value)}
+            />
+          </div>
+          <br></br>
+          <button type="button" onClick={handleAddCard}>Adicionar</button>
         </div>
-        <div className="container">
-          <Card />
-        </div>
+        {
+          content.map(i => 
+            <Card 
+              key={i.name}
+              name={i.name} 
+              amount={i.amount}
+            />
+          )
+        }
       </div>
     </>
   )
 }
+
+export default Extrato

@@ -1,13 +1,12 @@
 import './styles.css'
 
-export default function Card() {
+function Card(props) {
     return(
         <div className="card">
-            <strong>??/??/????</strong>
-            <div className="content">
-                <strong>Fulano</strong>
-                <strong id="value">R$????</strong>
-            </div>
+            <strong>{props.name}</strong>
+            {props.amount < 0 ? <strong className='red'>R$ {props.amount}</strong> : <strong className='green'>R${props.amount}</strong>}
         </div>
     )
 }
+
+export default Card
