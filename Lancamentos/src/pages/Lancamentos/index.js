@@ -11,7 +11,8 @@ function Index() {
   const [classe, setClasse] = useState();
 
   const [cards, setCards] = useState([]);
-  function handleAddCard(){
+
+  function handleCreateCard(){
 
     let time = new Date();
     let formattedTime = time.getFullYear()+'-0'+(time.getMonth()+1)+'-'+time.getDate();
@@ -24,20 +25,31 @@ function Index() {
       dC: formattedTime
     };
     setCards(prevState => [...prevState, newCard]);
-  }
 
-  function handleCreateCard(){
-
-    handleAddCard();
-    
+    //(classe=='Despesas') ? '/despesas/1' : '/recebiveis/1'
+    fetch('/despesas/1', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({newCard})
+    })
+    .then(response => {
+      // handle response
+    })
+    .catch(error => {
+    });
   }
 
 
   useEffect(() => {
-    fetch('../../arquivos/despesas.json')
-      .then(response => response.json())
-      .then(data => {console.log(data.name)})
-      .catch((err) => {console.log(err)});
+    fetch('/despesas')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      // Do something with the data
+    })
+    .catch(error => console.error(error));
   },[])
 
   return (
