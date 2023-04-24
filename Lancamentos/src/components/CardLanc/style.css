@@ -1,0 +1,49 @@
+h3, span, h6, strong, .lanc {
+    background-color: #F1EFF0;
+    border-radius: 30px;
+}
+
+.layer, .layer2{
+    text-align: left;
+    align-items: center;
+}
+
+.valor, .tipo, .lanc {
+    text-align: center;
+    color: #00396A;
+
+}
+
+.lanc{
+    margin-left: 4vw;
+    margin-bottom: 3vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 18vh;
+    width: 24vw;
+}
+
+
+.tipo{
+    font-size:larger;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.layer{
+    padding-top: 2vh;
+    padding-right: 1vw;
+    color: black;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.classe, .dataC, .dataD{
+    font-size: small;
+}
+
+.Val{
+    font-size: medium;
+    font-weight: bold;
+}
