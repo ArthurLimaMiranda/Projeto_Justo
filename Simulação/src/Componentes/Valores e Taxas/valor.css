@@ -59,3 +59,67 @@
 
     color: #FFFFFF;
 }
+
+.recdebito{
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 1095px;
+    top: 720px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.reccreditovista{
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 1095px;
+    top: 810px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.recparcelado{
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 1095px;
+    top: 900px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}

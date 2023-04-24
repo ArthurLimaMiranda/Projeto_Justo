@@ -11,18 +11,22 @@ import { Valor } from"../Componentes/Valores e Taxas/index";
 export function Home() {
 
   const [Voriginal, setVoriginal] = useState("");
-
+  
   const [Juros, setJuros] = useState("");
-
+  
   const [Parcelas, setParcelas] = useState("");
-
+  
   const [Forma, setForma] = useState("");
 
   var debito = parseFloat(Voriginal) + parseFloat(Voriginal*(Juros/100));
-
+  
   var credito = parseFloat(Voriginal)+ parseFloat(Voriginal*(Juros/100));
-
+  
   var vfinal = parseFloat(Voriginal*(1 + Juros/100)**Parcelas);
+  
+  var Rdebito = parseFloat(Voriginal) - parseFloat(Voriginal*(Juros/100));
+
+  var Rfinal =  parseFloat(Voriginal)  -  ((parseFloat(vfinal) - parseFloat(Voriginal))/parseFloat(Voriginal));
 
   var valores = new Array();
 
@@ -32,15 +36,21 @@ export function Home() {
       switch(Forma){
 
         case "debito" :         
-         valores[0] = debito
+         valores[0] = debito;
          valores[1] = 0;
          valores[2] = 0;
+         valores[3] = Rdebito;
+         valores[4] = 0;
+         valores[5] = 0;
          return valores;        
 
         case "credito a vista" :      
           valores[0] = 0;
           valores[1] = credito;
           valores[2] = 0;
+          valores[3] = 0;
+          valores[4] =  Rdebito;
+          valores[5] = 0;
           return valores;
          
 
@@ -48,6 +58,9 @@ export function Home() {
           valores[0] = 0;
           valores[1] = 0;
           valores[2] = vfinal;
+          valores[3] = 0;
+          valores[4] = 0;
+          valores[5] = Rfinal;
           return valores;
           
 
@@ -120,7 +133,8 @@ export function Home() {
           
       </h3>
 
-    <Valor debito= {valores[0]} creditovista = {valores[1]} creditoparcelado = {valores[2]} />
+    <Valor debito= {valores[0]} creditovista = {valores[1]} creditoparcelado = {valores[2]} 
+    recdebito = {valores[3]} reccreditovista= {valores[4]} recparcelado = {valores[5]} />
 
     </div>
     
