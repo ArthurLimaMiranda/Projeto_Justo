@@ -1,0 +1,21 @@
+.menu {
+   
+    color: white;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+.menu {
+    background-color: rgb(16, 72, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

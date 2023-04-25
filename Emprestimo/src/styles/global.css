@@ -1,0 +1,13 @@
+* {
+    margin: 100;
+    padding: 400;
+    box-sizing:initial;
+  }
+  body,
+input,
+button {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  --webkit-font-smoothing: antialiased;
+}
