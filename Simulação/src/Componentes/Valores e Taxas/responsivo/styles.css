@@ -4,11 +4,8 @@
     .Vdebito{
 
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 800px;
-        top: 720px;
-
+        left: 81vw;
+        top: 117vh;
         font-size: 28px;
     
     }
@@ -16,55 +13,40 @@
     .Vcredito{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 800px;
-        top: 810px;
-    
+        left: 81vw;
+        top: 131vh;
         font-size: 28px;
     }
     
     .Vparcelado{
-
+        
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 800px;
-        top: 900px;
-    
+        left: 81vw;
+        top: 146vh;
         font-size: 28px;
     }
     
     .recdebito{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 1035px;
-        top: 720px;
-
+        left: 102vw;
+        top: 117vh;
         font-size: 28px;
     }
     
     .reccreditovista{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 1035px;
-        top: 810px;
-
+        left: 102vw;
+        top: 131vh;
         font-size: 28px;
     }
     
     .recparcelado{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 1035px;
-        top: 900px;
-
+        left: 102vw;
+        top: 146vh;
         font-size: 28px;
     }
 }

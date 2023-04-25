@@ -9,15 +9,18 @@
     .Desktop{
        
         /* Background 1*/
-        width: 1260px;
-        height: 1024px;
+        width: 1260vw;
+        height: 1024vh;
     }
 
     .Desktop h1{
 
         /* Rentângulo do Simulador de Vendas */
-        width: 800px;
-        height: 80px;
+        position: absolute;
+        width: 63vw;
+        height: 13vh;
+        left: 55vw;
+        top: 1vh;
          
     }
 
@@ -27,17 +30,19 @@
         position: absolute;
         width: 382px;
         height: 0px;
-        left: 235px;
+        left: 135px;
         top: 0px;
             
         font-size: 40px;
-        line-height: 24px;  
     }
 
     .Desktop h2{
         /*Background 2*/
-        width: 800px;
-        height: 830px;    
+        position: absolute;
+        width: 63vw;
+        height: 143vh;
+        left: 55vw;
+        top: 17vh;    
     }
     
     .valordoproduto{
@@ -47,14 +52,12 @@
     
         /*Valor do Produto*/
         position: absolute;
-        width: 150px;
-        height: 100px;
-        left: 30px;
-        top: 30px;
-    
-        font-weight: 700;
+        width: 15vw;
+        height:15vh;
+        left: 15vw;
+        top: 0vh; 
         font-size: 26px;
-        line-height: 33px;      
+     
     }
 
     .pagamento{
@@ -65,13 +68,11 @@
      
         /* Bandeira do Cartão */
         position: absolute;
-        width: 150px;
-        height: 100px;
-        left: 30px;
-        top: 230px;
-    
+        width: 15vw;
+        height:15vh;
+        left: 15vw;
+        top: 38vh; ;
         font-size: 26px;
-        line-height: 33px;
     }
 
     .taxadamaquininha{
@@ -82,13 +83,11 @@
         /* Taxa da Maquininha */
 
         position: absolute;
-        width: 150px;
-        height: 100px;
-        left: 420px;
-        top: 30px;
-    
+        width: 15vw;
+        height:15vh;
+        left: 15vw;
+        top: 18vh; ;
         font-size: 26px;
-        line-height: 33px;
     }
 
     .ndeparcelas{
@@ -99,13 +98,11 @@
         /* Nº de Parcelas */
     
         position: absolute;
-        width: 150px;
-        height: 100px;
-        left: 420px;
-        top: 230px;
-
+        width: 15vw;
+        height:15vh;
+        left:15vw;
+        top: 58vh; ;
         font-size: 26px;
-        line-height: 33px;
     }
 
     .rs{
@@ -114,40 +111,34 @@
     
     
         position: absolute;
-        width: 119px;
-        height: 49px;
-        left: 250px;
-        top: 81px;
-
+        width: 10vw;
+        height:7vh;
+        left: 43vw;
+        top: 8.8vh;
         font-size: 22px;
-        line-height: 23px;
     }
 
     .taxa{
 
         /* Input da Taxa */
-
         position: absolute;
-        width: 119px;
-        height: 49px;
-        left: 600px;
-        top: 80px;
-
-        font-size: 25px;
-        line-height: 23px;
+        width: 10vw;
+        height:7vh;
+        left: 38vw;
+        top: 26vh; 
+        font-size: 23px;
     }
 
     .pagamentos{
 
         /* Input de Forma de Pagamento */
         position: absolute;
-        width: 170px;
-        height: 49px;
-        left: 200px;;
-        top: 280px;
-  
-        font-size: 24px;
-        line-height: 23px;
+        width: 16vw;
+        height:7vh;
+        left: 38vw;
+        top: 46vh; 
+        font-size: 20px;
+       
     }
 
     .parcela{
@@ -155,25 +146,22 @@
         /*Input Nº de Parcelas*/
 
         position: absolute;
-        width: 119px;
-        height: 49px;
-        left: 600px;
-        top: 280px;
-
-        font-size: 28px;
-        line-height: 23px;
+        width: 10vw;
+        height:7vh;
+        left: 38vw;
+        top: 66vh; 
+        font-size: 26px;
     }
 
     .section1{
 
         /* Section 1 */
-    
-    
+     
         position: absolute;
-        width: 50px;
-        height: 48px;
-        left: 200px;
-        top: 57px;
+        width: 5vw;
+        height:7vh;
+        left: 38vw;
+        top: 5vh; 
              
     }
 
@@ -182,59 +170,52 @@
         /* R$ */
     
         position: absolute;
-        width: 25px;
-        height: 23px;
-        left: 220px;
-        top: 74px;
-    
+        left: 39.5vw;
+        top: 7.5vh;
         font-size: 20px;
-        line-height: 23px;  
     }
 
     .section2{
 
         /* Section 2 */
         position: absolute;
-        width: 44px;
-        height: 49px;
-        left: 719px;
-        top: 56px;
+        width: 5vw;
+        height:7vh;
+        left: 48vw;
+        top: 22.2vh;
     }
 
     .juros{
 
         /* % */
         position: absolute;
-        width: 18px;
-        height: 28px;
-        left: 725px;
-        top: 67px;
-    
+        width: 5vw;
+        height:7vh;
+        left: 48vw;
+        top: 23.2vh; 
         font-size: 24px;
-        line-height: 28px;
+
     }
 
     .section3{
 
         /* Section 3 */
         position: absolute;
-        width: 44px;
-        height: 49px;
-        left: 719px;
-        top: 256px;
+        width: 5vw;
+        height:7vh;
+        left: 48vw;
+        top: 62.21vh;
     }
 
     .vezes{
 
         /* X */
         position: absolute;
-        width: 18px;
-        height: 28px;
-        left: 727px;
-        top: 266px;
-
+        width: 5vw;
+        height:7vh;
+        left: 47.5vw;
+        top: 63.5vh;
         font-size: 24px;
-        line-height: 28px;
     }
 
 /*  Tabela  */
@@ -242,10 +223,10 @@
 
     /*Tabela*/
     position: absolute;
-    width: 740px;
-    height: 351px;
-    left: 30px;
-    top: 400px;
+    width: 59vw;
+    height:55vh;
+    left: 2vw;
+    top: 78vh; 
 }
 
 .linha1{
@@ -253,10 +234,10 @@
     /*Linha 1*/
 
     position: absolute;
-    width: 735px;
-    height: 0px;
-    left: 30px;
-    top: 487px;
+    width: 58.5vw;
+    height: 0vh;
+    left: 2vw;
+    top: 90vh; 
 
 }
 
@@ -265,21 +246,20 @@
     /*Linha 2*/
 
     position: absolute;
-    width: 735px;
-    height: 0px;
-    left: 30px;
-    top: 574px;
+    width: 58.5vw;
+    height: 0vh;
+    left: 2vw;
+    top: 103vh; 
 }
 
 .linha3{
 
     /*Linha 3*/
-
     position: absolute;
-    width: 735px;
-    height: 0px;
-    left: 30px;
-    top: 661px;
+    width: 58.5vw;
+    height: 0vh;
+    left: 2vw;
+    top: 118vh; 
 }
 
 .coluna1{
@@ -287,102 +267,81 @@
     /*Coluna1*/
 
     position: absolute;
-    width: 349px;
-    height: 0px;
-    left: 100px;
-    top: 573px;
+    width: 33.5vw;
+    height: 0vh;
+    left: 5vw;
+    top: 105vh;
 }
 
 .coluna2{
 
     /*Coluna2*/
-
     position: absolute;
-    width: 349px;
-    height: 0px;
-    left: 370px;
-    top: 573px;
+    width: 33.5vw;
+    height: 0vh;
+    left: 25vw;
+    top: 105vh;
 }
 
 .formadepagamento{
 
     /* Forma de Pagamento */
 
-
     position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 60px;
-    top: 415px;
+    left: 3vw;
+    top: 80vh; 
 
     font-size: 24px;
-    line-height: 29px;
 }
 
 .valorasercobrado{
 
     /* Valor a ser Cobrado */
     position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 320px;
-    top: 415px;
+    left: 23.5vw;
+    top: 80vh; 
 
     font-size: 24px;
-    line-height: 29px;
 }
 
 .valoraserrecebido{
 
     /* Valor a ser Recebido */
     position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 570px;
-    top: 415px;
+    left: 43vw;
+    top: 80vh; 
 
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24px;;
 }
 
 .debito{
 
     /* Débito */
     position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 110px;
-    top: 500px;
+    left: 8vw;
+    top: 92vh; 
 
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 29px;
+    font-size: 28px;
 }
 
 .creditoavista{
 
     /* Crédito à Vista */
     position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 70px;
-    top: 590px;
+    left: 4vw;
+    top: 106vh; 
 
-    font-size: 28px;
-    line-height: 29px;
+    font-size: 26px;
 }
 
 .creditoparcelado{
 
     /* Crédito Parcelado */
     position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 70px;
-    top: 675px;
+    left: 3vw;
+    top: 121vh; 
 
-    font-size: 28px;
-    line-height: 29px;
+    font-size: 26px;
 }
 
 

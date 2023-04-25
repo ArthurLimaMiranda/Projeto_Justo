@@ -3,10 +3,10 @@
     /* Guia de Navegação */
 
     position: absolute;
-    width: 344px;
-    height: 1020px;
-    left: 0px;
-    top: -18px;
+    width: 27vw;
+    height: 150vh;
+    left: 25vw;
+    top: 0vh;
 
     background: #00396A;
     border-radius: 30px;
@@ -17,10 +17,10 @@
     /* Injusta */
 
     position: absolute;
-    width: 163px;
-    height: 24px;
-    left: 91px;
-    top: 30px;
+    width: 33vw;
+    height: 24vh;
+    left: -3vw;
+    top: 3vh;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -39,10 +39,10 @@
     /* Traço */
 
     position: absolute;
-    width: 281px;
-    height: 1px;
-    left: 32px;
-    top: 135px;
+    width: 25vw;
+    height: 0.2vh;
+    left: 1vw;
+    top: 16vh;
 
     background: #FFFFFF;
     transform: matrix(1, 0, 0, -1, 0, 0);
@@ -53,10 +53,10 @@
     /* Bloco1 */
 
     position: absolute;
-    width: 344px;
-    height: 56px;
-    left: 0px;
-    top: 222px;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0vw;
+    top: 35vh;
 
     background: #377EB8;
     border: 3px solid #00396A;
@@ -67,10 +67,10 @@
     /* Bloco2 */
 
     position: absolute;
-    width: 344px;
-    height: 56px;
-    left: 0px;
-    top: 327px;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0vw;
+    top: 52vh;
 
     background: #377EB8;
     border: 3px solid #00396A;
@@ -80,13 +80,12 @@
 
     /* Bloco3 */
 
-    
-
     position: absolute;
-    width: 344px;
-    height: 56px;
-    left: 0px;
-    top: 432px;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0vw;
+    top: 68vh;
+
 
     background: #377EB8;
     border: 3px solid #00396A;
@@ -97,10 +96,10 @@
     /* Bloco4 */
 
     position: absolute;
-    width: 344px;
-    height: 56px;
-    left: 0px;
-    top: 537px;
+    width: 26.9vw;
+    height: 9vh;
+    left: 0.2vw;
+    top: 85vh;
     
     background: #377EB8;
 }
@@ -110,11 +109,11 @@
     /* Bloco5 */
 
     position: absolute;
-    width: 344px;
-    height: 56px;
-    left: 0px;
-    top: 642px;
-    
+    width: 26.65vw;
+    height: 9vh;
+    left: 0.1vw;
+    top: 101vh;
+
     background: #377EB8;
     border: 3px solid #00396A;
 }
@@ -122,12 +121,11 @@
 .bloco6{
 
     /* Bloco6 */
-
     position: absolute;
-    width: 344px;
-    height: 56px;
-    left: 0px;
-    top: 747px;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0.1vw;
+    top: 118vh;
     
     background: #377EB8;
     border: 3px solid #00396A;
