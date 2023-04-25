@@ -9,13 +9,302 @@
     padding: 20px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    
+    top: 20vh;
 }
 
 .menu {
     background-color: rgb(16, 72, 203);
+    padding-top: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
 
+}
+.Desktop h3{
+
+    /* Guia de Navegação */
+
+    position: absolute;
+    width: vw;
+    height: vh;
+    left: vw;
+    top: 10vh;
+
+    background: #00396A;
+    border-radius: 30px;
+}
+
+.justa{
+
+    /* Injusta */
+
+    position: absolute;
+    width: 33vw;
+    height: 0vh;
+    left: -9vw;
+    top: 2vh;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 24px;
+  
+
+    text-align: center;
+
+    color:  #377EB8;
+}
+
+.traço{
+
+
+
+    position: absolute;
+    width: vw;
+    height: 0.2vh;
+    left: 1vw;
+    top: 8vh;
+
+
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bloco1{
+
+    /* Bloco1 */
+
+    position: absolute;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0vw;
+    top: 20vh;
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco2{
+
+    /* Bloco2 */
+
+    position: absolute;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0vw;
+    top: 35vh;
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco3{
+
+    /* Bloco3 */
+
+    position: absolute;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0vw;
+    top: 50vh;
+
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco4{
+
+    /* Bloco4 */
+
+    position: absolute;
+    width: 26.9vw;
+    height: 9vh;
+    left: 0.2vw;
+    top: 65vh;
+    
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco5{
+
+    /* Bloco5 */
+
+    position: absolute;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0.1vw;
+    top: 80vh;
+
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.bloco6{
+
+    /* Bloco6 */
+    position: absolute;
+    width: 26.65vw;
+    height: 9vh;
+    left: 0.1vw;
+    top: 95vh;
+    
+    background: #377EB8;
+    border: 3px solid #00396A;
+}
+
+.telainicial{
+
+    
+
+    /* Tela inicial */
+
+
+    position: absolute;
+    width: 96px;
+    height: 29px;
+    left: 79px;
+    top: 150px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+}
+
+.saldodevendas{
+
+   /* Saldo de vendas */
+
+
+    position: absolute;
+    width: 150px;
+    height: 29px;
+    left: 50px;
+    top: 240px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white; 
+}
+
+.lançamentos{
+
+    /* Lançamentos */
+
+
+    position: absolute;
+    width: 122px;
+    height: 29px;
+    left: 79px;
+    top: 340px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+}
+
+.simulaçoes{
+
+    /* Simulações */
+
+
+    position: absolute;
+    width: 109px;
+    height: 29px;
+    left: 79px;
+    top: 430px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+.boleto{
+
+   /* Gerar boleto */
+
+
+    position: absolute;
+    width: 111px;
+    height: 29px;
+    left: 79px;
+    top: 525px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white; 
+}
+
+.emprestimo{
+
+/* Empréstimo */
+
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 79px;
+top: 626px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 24px;
+/* or 120% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: white;
 }
