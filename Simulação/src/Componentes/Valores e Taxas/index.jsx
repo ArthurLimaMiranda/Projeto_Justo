@@ -1,4 +1,5 @@
 import "./valor.css"
+import "./responsivo/styles.css"
 
 export function Valor(props){
 

@@ -1,0 +1,379 @@
+/* 480px - 768px = tablet */
+@media (min-width: 480px) and (max-width: 768px){
+   
+    .Desktop{
+        /* Background 1*/
+        box-sizing: border-box;
+    
+        position: relative;
+        width: 1200px;
+        height: 1540px;
+        
+    }
+    .Desktop h1{
+
+        /* Rentângulo do Simulador de Vendas */
+        position: absolute;
+        width: 700px;
+        height: 80px;
+        left: 438px;
+        top: 62px;
+     
+  }
+
+  .simuladordevendas{
+
+    /* Simulador de Vendas*/
+    position: absolute;
+    width: 382px;
+    height: 0px;
+    left: 180px;
+    top: 0px;
+        
+    font-size: 40px;
+}
+
+.Desktop h2{
+    /*Background 2*/
+    width: 700px;
+    height: 1320px;    
+}
+
+.valordoproduto{
+
+    /*caixa azul*/
+    position: absolute;    
+
+    /*Valor do Produto*/
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    left: 30px;
+    top: 30px;
+
+    font-size: 38px;     
+}
+
+.pagamento{
+    
+    /* botão azul */
+
+    position: absolute;
+ 
+    /* Bandeira do Cartão */
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    left: 30px;
+    top: 230px;
+
+    font-size: 38px;
+}
+
+.taxadamaquininha{
+
+    /* botão azul */
+    position: absolute;
+
+    /* Taxa da Maquininha */
+
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    left: 30px;
+    top: 430px;
+
+    font-size: 38px;
+}
+
+.ndeparcelas{
+
+    /* botão azul */
+    position: absolute;
+
+    /* Nº de Parcelas */
+
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    left: 30px;
+    top: 630px;
+
+    font-size: 38px;
+}
+
+.rs{
+
+    /*Input valor do Produto*/
+
+
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 380px;
+    top: 81px;
+
+    font-size: 22px;
+}
+
+.taxa{
+
+    /* Input da Taxa */
+
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 500px;
+    top: 480px;
+
+    font-size: 25px;
+}
+
+.pagamentos{
+
+    /* Input de Forma de Pagamento */
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 500px;;
+    top: 280px;
+
+    font-size: 24px;
+}
+
+.parcela{
+
+    /*Input Nº de Parcelas*/
+
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 500px;
+    top: 680px;
+
+    font-size: 28px;
+    line-height: 23px;
+}
+
+.section1{
+
+    /* Section 1 */
+
+
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    left: 300px;
+    top: 57px;
+         
+}
+
+.money{
+
+    /* R$ */
+
+    position: absolute;
+    width: 25px;
+    height: 23px;
+    left: 320px;
+    top: 74px;
+
+    font-size: 20px;
+    line-height: 23px;  
+}
+
+.section2{
+
+    /* Section 2 */
+    position: absolute;
+    width: 44px;
+    height: 70px;
+    left: 619px;
+    top: 456px;
+}
+
+.juros{
+
+    /* % */
+    position: absolute;
+    width: 18px;
+    height: 28px;
+    left: 623px;
+    top: 465px;
+
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.section3{
+
+    /* Section 3 */
+    position: absolute;
+    width: 44px;
+    height: 70px;
+    left: 619px;
+    top: 656px;
+}
+
+.vezes{
+
+    /* X */
+    position: absolute;
+    width: 18px;
+    height: 28px;
+    left: 625px;
+    top: 666px;
+
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/*  Tabela  */
+.tabela{
+
+    /*Tabela*/
+    position: absolute;
+    width: 650px;
+    height: 430px;
+    left: 30px;
+    top: 800px;
+}
+
+.linha1{
+
+    /*Linha 1*/
+
+    position: absolute;
+    width: 644px;
+    height: 0px;
+    left: 30px;
+    top: 880px;
+
+}
+
+.linha2{
+
+    /*Linha 2*/
+
+    position: absolute;
+    width: 644px;
+    height: 0px;
+    left: 30px;
+    top: 990px;
+}
+
+.linha3{
+
+    /*Linha 3*/
+
+    position: absolute;
+    width: 644px;
+    height: 0px;
+    left: 30px;
+    top: 1105px;
+}
+
+.coluna1{
+
+    /*Coluna1*/
+
+    position: absolute;
+    width: 425px;
+    height: 0px;
+    left: 10px;
+    top: 1015px;
+}
+
+.coluna2{
+
+    /*Coluna2*/
+
+    position: absolute;
+    width: 425px;
+    height: 0px;
+    left: 240px;
+    top: 1015px;
+}
+
+.formadepagamento{
+
+    /* Forma de Pagamento */
+
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 30px;
+    top: 810px;
+
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.valorasercobrado{
+
+    /* Valor a ser Cobrado */
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 240px;
+    top: 810px;
+
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.valoraserrecebido{
+
+    /* Valor a ser Recebido */
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 470px;
+    top: 810px;
+
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.debito{
+
+    /* Débito */
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 80px;
+    top: 900px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+}
+
+.creditoavista{
+
+    /* Crédito à Vista */
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 45px;
+    top: 1025px;
+
+    font-size: 26px;
+    line-height: 29px;
+}
+
+.creditoparcelado{
+
+    /* Crédito Parcelado */
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 35px;
+    top: 1135px;
+
+    font-size: 28px;
+    line-height: 29px;
+}
+
+}

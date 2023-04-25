@@ -2,6 +2,8 @@ import { useState } from 'react'
 import "./simuladorpage.css"
 import "./guiadenavegação.css"
 import "./tabela.css"
+import "../Styles Responsivo/desktop.css"
+import "../Styles Responsivo/tablet.css"
 
 import { Valor } from"../Componentes/Valores e Taxas/index";
 
@@ -18,15 +20,15 @@ export function Home() {
   
   const [Forma, setForma] = useState("");
 
-  var debito = parseFloat(Voriginal) + parseFloat(Voriginal*(Juros/100));
+  var debito = (parseFloat(Voriginal) + parseFloat(Voriginal*(Juros/100))).toFixed(2) ;
   
-  var credito = parseFloat(Voriginal)+ parseFloat(Voriginal*(Juros/100));
+  var credito = (parseFloat(Voriginal)+ parseFloat(Voriginal*(Juros/100))).toFixed(2) ;
   
-  var vfinal = parseFloat(Voriginal*(1 + Juros/100)**Parcelas);
+  var vfinal = (parseFloat(Voriginal*(1 + Juros/100)**Parcelas)).toFixed(2) ;
   
-  var Rdebito = parseFloat(Voriginal) - parseFloat(Voriginal*(Juros/100));
+  var Rdebito = (parseFloat(Voriginal) - parseFloat(Voriginal*(Juros/100))).toFixed(2) ;
 
-  var Rfinal =  parseFloat(Voriginal)  -  ((parseFloat(vfinal) - parseFloat(Voriginal))/parseFloat(Voriginal));
+  var Rfinal =  (parseFloat(Voriginal)  -  ((parseFloat(vfinal) - parseFloat(Voriginal))/parseFloat(Voriginal))).toFixed(2);
 
   var valores = new Array();
 
