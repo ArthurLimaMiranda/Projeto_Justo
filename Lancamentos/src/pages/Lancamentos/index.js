@@ -1,112 +1,193 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import './style.css';
 import { CardLanc } from '../../components/CardLanc';
 
 function Index() {
 
-  const [modoPag, setModoPag] = useState();
-  const [val, setVal] = useState();
-  const [dataD, setdataD] = useState();
-  const [classe, setClasse] = useState();
+    const [modoPag, setModoPag] = useState();
+    const [val, setVal] = useState();
+    const [dataD, setdataD] = useState();
+    const [classe, setClasse] = useState();
+    const [cards, setCards] = useState([]);
+    const hasRunRef = useRef(false);
 
-  const [cards, setCards] = useState([]);
+    //Change Later
+    let Id = 1;
 
-  function handleCreateCard(){
-
-    let time = new Date();
-    let formattedTime = time.getFullYear()+'-0'+(time.getMonth()+1)+'-'+time.getDate();
-    const newCard = {
-      k: time.toLocaleTimeString("pt-br")+time.getMilliseconds(),
-      mP: modoPag,
-      v: val,
-      dD: dataD,
-      c: classe,
-      dC: formattedTime
-    };
-    setCards(prevState => [...prevState, newCard]);
-
-    //(classe=='Despesas') ? '/despesas/1' : '/recebiveis/1'
-    fetch('http://localhost:3000/despesas/1', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        code: time.toLocaleTimeString("pt-br")+time.getMilliseconds(),
-        modoDePagamento: modoPag,
-        valor: val,
-        dataDeDebito: dataD,
-        classe: classe,
-        dataDeCriacao: formattedTime
-      })
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-  }
+    function handleCreateCard() {
+        console.log(classe);
+        let time = new Date();
+        let formattedTime = time.getFullYear() + '-0' + (time.getMonth() + 1) + '-' + time.getDate();
+        const newCard = {
+            k: time.toLocaleTimeString("pt-br") + time.getMilliseconds(),
+            mP: modoPag,
+            v: val,
+            dD: dataD,
+            c: classe,
+            dC: formattedTime
+        };
+        setCards(prevState => [...prevState, newCard]);
 
 
-  useEffect(() => {
-    fetch('http://localhost:3000/despesas')
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      // Do something with the data
-    })
-    .catch(error => console.error(error));
-  },[])
+        fetch('http://localhost:3001/' + ((classe === 'Despesas') ? 'despesas/'+{Id} : 'recebiveis/'+{Id}), {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: Id,
+                code: time.toLocaleTimeString("pt-br") + time.getMilliseconds(),
+                modoDePagamento: modoPag,
+                valor: val,
+                dataDeDebito: dataD,
+                classe: classe,
+                dataDeCriacao: formattedTime
+            })
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+    }
 
-  return (
-    <>
-      <main>
-        <div className ="left"></div>
+    useEffect(() => {
+        if (!hasRunRef.current) {
+            let lancamentos = [];
+            let cont = 0;
+            fetch('http://localhost:3001/despesas')
+                .then(response => response.json())
+                .then(data => {
+                    const record = data.records.find((item) => item.id === Id);
+                    for (let despesa in record.despesas) {
+                        lancamentos[cont] = record.despesas[despesa];
+                        cont++;
+                    }
 
-        <div className ="right">
+                })
+                .catch(error => console.error(error));
 
-          <div className ="top">
-            <h1>Recebíveis e despesas</h1>
-          </div>
+            fetch('http://localhost:3001/recebiveis')
+                .then(response => response.json())
+                .then(data => {
+                    const record = data.records.find((item) => item.id === Id);
+                    for (let recebivel in record.recebiveis) {
+                        lancamentos[cont] = record.recebiveis[recebivel];
+                        cont++;
+                    }
 
-          <div className ="botton">
-            {
-              cards.map(card => (
-                <CardLanc 
-                  key={card.k}
-                  modoPagamento={card.mP} 
-                  valor={card.v} 
-                  dataDebito={card.dD} 
-                  dataCriado={card.dC} 
-                  lancamaneto={card.c}
-                />
-              )) 
-            }            
-          </div>
+                    lancamentos.sort((a, b) => {
+                        const dateA = new Date(a.dataDeDebito);
+                        const dateB = new Date(b.dataDeDebito);
+                        return dateA - dateB;
+                    });
 
-          <div className ="lower">
-            <button type="button" onClick={handleCreateCard}>Clique Aqui</button> 
-            <input 
-              type='text'
-              onChange={e => setModoPag(e.target.value)}
-            />
-            <input 
-              type='text'
-              onChange={f => setVal(f.target.value)}
-            />
-            <input 
-              type='text'
-              onChange={g => setClasse(g.target.value)}
-            />
-            <input 
-              type='date'
-              onChange={h => setdataD(h.target.value)}
-            />         
-          </div>
+                    for (let lancamento in lancamentos) {
+                        let dia = new Date();
+                        let formattedDia = dia.getFullYear() + '-0' + (dia.getMonth() + 1) + '-' + dia.getDate();
+                        if (lancamentos[lancamento].dataDeDebito === formattedDia) {
+                            fetch('http://localhost:3001/extrato/'+{Id}, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify({
+                                    id: Id,
+                                    code: lancamentos[lancamento].code,
+                                    modoDePagamento: lancamentos[lancamento].modoDePagamento,
+                                    valor: lancamentos[lancamento].valor,
+                                    dataDeDebito: lancamentos[lancamento].dataDeDebito,
+                                    classe: lancamentos[lancamento].classe,
+                                    dataDeCriacao: lancamentos[lancamento].dataDeCriacao
+                                })
+                            })
+                                .then(response => response.json())
+                                .then(data => console.log(data))
+                                .catch(error => console.error(error));
+                            
+                            
 
-        </div>
-      </main>
-    </>
-  )
+                                fetch('http://localhost:3001/'+lancamentos[lancamento].classe.toLowerCase()+'/:'+Id+'/:'+lancamentos[lancamento].code, 
+                                { method: 'DELETE' })
+                                .then(response => response.json())
+                                .then(data => console.log(data))
+                                .catch(error => console.error(error));
+
+                                  
+                        }
+
+                        else {
+                            const newCard = {
+                                k: lancamentos[lancamento].code,
+                                mP: lancamentos[lancamento].modoDePagamento,
+                                v: lancamentos[lancamento].valor,
+                                dD: lancamentos[lancamento].dataDeDebito,
+                                c: lancamentos[lancamento].classe,
+                                dC: lancamentos[lancamento].dataDeCriacao
+                            };
+                            setCards(prevState => [...prevState, newCard]);
+                        }
+                    }
+                })
+                .catch(error => console.error(error));
+
+            hasRunRef.current = true;
+        }
+    }, []);
+
+
+
+
+
+    return (
+        <>
+            <main>
+                <div className="left"></div>
+
+                <div className="right">
+
+                    <div className="top">
+                        <h1>Recebíveis e despesas</h1>
+                    </div>
+
+                    <div className="botton">
+                        {
+                            cards.map(card => (
+                                <CardLanc
+                                    key={card.k}
+                                    modoPagamento={card.mP}
+                                    valor={card.v}
+                                    dataDebito={card.dD}
+                                    dataCriado={card.dC}
+                                    lancamaneto={card.c}
+                                />
+                            ))
+                        }
+                    </div>
+
+                    <div className="lower">
+                        <button type="button" onClick={handleCreateCard}>Clique Aqui</button>
+                        <input
+                            type='text'
+                            onChange={e => setModoPag(e.target.value)}
+                        />
+                        <input
+                            type='text'
+                            onChange={f => setVal(f.target.value)}
+                        />
+                        <input
+                            type='text'
+                            onChange={g => setClasse(g.target.value)}
+                        />
+                        <input
+                            type='date'
+                            onChange={h => setdataD(h.target.value)}
+                        />
+                    </div>
+
+                </div>
+            </main>
+        </>
+    )
 }
 
 export default Index;
