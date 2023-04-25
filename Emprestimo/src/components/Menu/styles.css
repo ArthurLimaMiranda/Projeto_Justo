@@ -23,7 +23,7 @@
 }
 .Desktop h3{
 
-    /* Guia de Navegação */
+
 
     position: absolute;
     width: vw;
@@ -37,7 +37,7 @@
 
 .justa{
 
-    /* Injusta */
+
 
     position: absolute;
     width: 33vw;
@@ -73,7 +73,7 @@
 
 .bloco1{
 
-    /* Bloco1 */
+
 
     position: absolute;
     width: 26.65vw;
@@ -87,7 +87,7 @@
 
 .bloco2{
 
-    /* Bloco2 */
+
 
     position: absolute;
     width: 26.65vw;
@@ -101,7 +101,6 @@
 
 .bloco3{
 
-    /* Bloco3 */
 
     position: absolute;
     width: 26.65vw;
@@ -116,7 +115,7 @@
 
 .bloco4{
 
-    /* Bloco4 */
+
 
     position: absolute;
     width: 26.9vw;
@@ -130,7 +129,7 @@
 
 .bloco5{
 
-    /* Bloco5 */
+
 
     position: absolute;
     width: 26.65vw;
@@ -144,7 +143,7 @@
 
 .bloco6{
 
-    /* Bloco6 */
+
     position: absolute;
     width: 26.65vw;
     height: 9vh;
@@ -159,7 +158,6 @@
 
     
 
-    /* Tela inicial */
 
 
     position: absolute;
@@ -185,7 +183,7 @@
 
 .saldodevendas{
 
-   /* Saldo de vendas */
+  
 
 
     position: absolute;
@@ -199,7 +197,7 @@
     font-weight: 500;
     font-size: 21px;
     line-height: 24px;
-    /* or 120% */
+ 
 
     display: flex;
     align-items: center;
@@ -210,7 +208,7 @@
 
 .lançamentos{
 
-    /* Lançamentos */
+
 
 
     position: absolute;
@@ -224,7 +222,7 @@
     font-weight: 500;
     font-size: 21px;
     line-height: 24px;
-    /* or 120% */
+
 
     display: flex;
     align-items: center;
@@ -235,8 +233,6 @@
 }
 
 .simulaçoes{
-
-    /* Simulações */
 
 
     position: absolute;
@@ -250,7 +246,7 @@
     font-weight: 500;
     font-size: 21px;
     line-height: 24px;
-    /* or 120% */
+
 
     display: flex;
     align-items: center;
@@ -260,9 +256,6 @@
 }
 
 .boleto{
-
-   /* Gerar boleto */
-
 
     position: absolute;
     width: 111px;
@@ -275,7 +268,7 @@
     font-weight: 500;
     font-size: 21px;
     line-height: 24px;
-    /* or 120% */
+
 
     display: flex;
     align-items: center;
@@ -285,9 +278,6 @@
 }
 
 .emprestimo{
-
-/* Empréstimo */
-
 
 position: absolute;
 width: 111px;
@@ -300,7 +290,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 21px;
 line-height: 24px;
-/* or 120% */
+
 
 display: flex;
 align-items: center;
