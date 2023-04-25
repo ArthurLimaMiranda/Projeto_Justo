@@ -15,7 +15,7 @@
 .menubar {
     background-color: rgb(16, 72, 203);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -47,6 +47,7 @@
     border: none;
     cursor: pointer;
     transition: filter 0.2s;
+    display: none;
 }
 
 .balance button {
@@ -67,4 +68,21 @@
     height: 10px;
     background-color: #DADADA;
     border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+    .menubar {
+        background-color: rgb(16, 72, 203);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menubar button {
+        display: flex;
+    }
+
+    .header {
+        width: 80%;
+    }
 }

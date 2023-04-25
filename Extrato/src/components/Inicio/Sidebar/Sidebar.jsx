@@ -1,10 +1,10 @@
 import "./Sidebar.css"
 import SidebarItem from '../SidebarItem/SidebarItem'
 
-function Sidebar() {
+function Sidebar(props) {
   return (
     <>
-        <div id='sidebar'>
+        <div id={props.show}>
             <div id="sidebarTitle">
               <h1>Justa</h1>
             </div>

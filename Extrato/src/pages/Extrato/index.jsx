@@ -9,6 +9,7 @@ function Extrato() {
   const [number, setNumber] = useState();
   const [content, setContent] = useState([]);
   const [saldo, setSaldo] = useState(0);
+  const [isOpen, setIsOpen] = useState(true);
 
   function handleAddCard(){
     const newCard = {
@@ -22,10 +23,13 @@ function Extrato() {
   
   return (
     <>
-      <Sidebar />
+      <Sidebar 
+        show={(isOpen) ? "sidebar" : "noSidebar"}
+      />
       <div className="container">
         <Header 
           balance={saldo}
+          toggle={() => setIsOpen(!isOpen)}
         />
         <div className='form'>
           <div className='info'>
