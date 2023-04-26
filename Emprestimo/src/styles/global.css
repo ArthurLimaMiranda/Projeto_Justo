@@ -1,17 +1,14 @@
 * {
-  box-sizing: border-box;
+  box-sizing: initial;
   background-color: #377EB8;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
+  margin: -20;
+  color:white;
+  padding-left: 10%;
+  font-size: 23px;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-input,
-button {
-  font-size: 1rem;
-}

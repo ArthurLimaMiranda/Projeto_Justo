@@ -3,7 +3,7 @@ import "./styles.css";
 export function Menu() {
   return (
     <div className="menu">
-      <h3>EMPRÉSTIMO</h3>
+      <h2>EMPRÉSTIMO</h2>
       <h3>
           <p className='justa'>Justa</p>
           <p className='traço'></p>
