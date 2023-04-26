@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Home } from './Pages/Home'
 import "./Styles Responsivo/desktop.css"
+import "./Styles Responsivo/mobile.css"
 import "./Styles Responsivo/tablet.css"
 
 

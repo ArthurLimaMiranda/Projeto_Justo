@@ -52,74 +52,108 @@
 }
 
 
-/*  Tablet  */
-@media (min-width: 480px) and (max-width: 768px){
+/*  Mobile  */
+@media (min-width: 480px) and (max-width: 767px){
 
     .Vdebito{
 
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 720px;
-        top: 1120px;
-
-        font-size: 28px;
+        left: 41vw;
+        top: 131vh;
+        font-size: 22px;
     
     }
     
     .Vcredito{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 720px;
-        top: 1240px;
+        left: 41vw;
+        top: 145vh;
+        font-size: 22px;
+    }
     
+    .Vparcelado{
+
+        position: absolute;
+        left: 41vw;
+        top: 160vh;
+        font-size: 22px;
+    }
+    
+    .recdebito{
+    
+        position: absolute;
+        left: 70vw;
+        top: 131vh;
+        font-size: 22px;
+    }
+    
+    .reccreditovista{
+    
+        position: absolute;
+        left: 70vw;
+        top: 145vh;
+        font-size: 22px;
+    }
+    
+    .recparcelado{
+    
+        position: absolute;
+        left: 70vw;
+        top: 160vh;
+        font-size: 22px;
+    }
+}
+
+/*  Tablet  */
+@media (min-width: 768px) {
+
+    .Vdebito{
+
+        position: absolute;
+        left: 59vw;
+        top: 138vh;
+        font-size: 28px;
+    
+    }
+    
+    .Vcredito{
+        position: absolute;
+        left: 59vw;
+        top: 157vh;
         font-size: 28px;
     }
     
     .Vparcelado{
 
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 720px;
-        top: 1360px;
-    
+        left: 59vw;
+        top: 179vh;
         font-size: 28px;
     }
     
     .recdebito{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 955px;
-        top: 1120px;
-
+        left: 90vw;
+        top: 138vh;
         font-size: 28px;
     }
     
     .reccreditovista{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 955px;
-        top: 1240px;
-
+        left: 90vw;
+        top: 157vh;
         font-size: 28px;
     }
     
     .recparcelado{
     
         position: absolute;
-        width: 181px;
-        height: 52px;
-        left: 955px;
-        top: 1360px;
-
+        left: 90vw;
+        top: 179vh;
         font-size: 28px;
     }
-}
 
+}
