@@ -38,6 +38,15 @@
           "dataDeDebito": "2023-04-28",
           "classe": "Despesas",
           "dataDeCriacao": "2023-04-24"
+        },
+        {
+          "id": 1,
+          "code": "01:27:180",
+          "modoDePagamento": "TestandoFiltr",
+          "valor": "2344.34",
+          "dataDeDebito": "2023-04-29",
+          "classe": "Despesas",
+          "dataDeCriacao": "2023-04-26"
         }
       ]
     },
