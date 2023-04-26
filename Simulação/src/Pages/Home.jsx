@@ -3,6 +3,7 @@ import "./simuladorpage.css"
 import "./guiadenavegação.css"
 import "./tabela.css"
 import "../Styles Responsivo/desktop.css"
+import "../Styles Responsivo/mobile.css"
 import "../Styles Responsivo/tablet.css"
 
 import { Valor } from"../Componentes/Valores e Taxas/index";

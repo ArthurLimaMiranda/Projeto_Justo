@@ -9,12 +9,14 @@ function Index() {
     const [val, setVal] = useState();
     const [dataD, setdataD] = useState();
     const [classe, setClasse] = useState();
+    const [titulo, setTitulo] = useState();
+    const [mode, setMode] = useState();
     const [cards, setCards] = useState([]);
+    const [newLancamentos, setnewLancamentos] = useState([]);
     const hasRunRef = useRef(false);
 
     //Change Later
     let Id = 1;
-
     function handleCreateCard() {
         console.log(classe);
         let time = new Date();
@@ -50,8 +52,25 @@ function Index() {
             .catch(error => console.error(error));
     }
 
+    function handleFilter() {    
+        if (mode === 0) {
+          setTitulo('Recebíveis e despesas'); 
+          setMode(1);
+        } 
+        else if (mode === 1) {
+          setTitulo('Recebíveis');
+          setMode(2);
+        } 
+        else {
+          setTitulo('Despesas');
+          setMode(0);
+        }
+      }
+
     useEffect(() => {
         if (!hasRunRef.current) {
+            setTitulo('Recebíveis e despesas');
+            setMode(1);
             let lancamentos = [];
             let cont = 0;
             fetch('http://localhost:3001/despesas')
@@ -80,6 +99,8 @@ function Index() {
                         const dateB = new Date(b.dataDeDebito);
                         return dateA - dateB;
                     });
+
+                    setnewLancamentos(lancamentos);
 
                     for (let lancamento in lancamentos) {
                         let dia = new Date();
@@ -134,9 +155,53 @@ function Index() {
         }
     }, []);
 
+    useEffect(() => {
+        setCards([]);
+        for (let lancamento in newLancamentos) {
+            if(mode==2){
+                if (newLancamentos[lancamento].classe === 'Recebiveis'){
+                    const newCard = {
+                        k: newLancamentos[lancamento].code,
+                        mP: newLancamentos[lancamento].modoDePagamento,
+                        v: newLancamentos[lancamento].valor,
+                        dD: newLancamentos[lancamento].dataDeDebito,
+                        c: newLancamentos[lancamento].classe,
+                        dC: newLancamentos[lancamento].dataDeCriacao
+                    };
+                    setCards(prevState => [...prevState, newCard]);
+                }
+
+            }
+            else if(mode==0){
+                if (newLancamentos[lancamento].classe === 'Despesas'){
+                    const newCard = {
+                        k: newLancamentos[lancamento].code,
+                        mP: newLancamentos[lancamento].modoDePagamento,
+                        v: newLancamentos[lancamento].valor,
+                        dD: newLancamentos[lancamento].dataDeDebito,
+                        c: newLancamentos[lancamento].classe,
+                        dC: newLancamentos[lancamento].dataDeCriacao
+                    };
+                    setCards(prevState => [...prevState, newCard]);                   
+                }
+            }
+
+            else{
+                const newCard = {
+                    k: newLancamentos[lancamento].code,
+                    mP: newLancamentos[lancamento].modoDePagamento,
+                    v: newLancamentos[lancamento].valor,
+                    dD: newLancamentos[lancamento].dataDeDebito,
+                    c: newLancamentos[lancamento].classe,
+                    dC: newLancamentos[lancamento].dataDeCriacao
+                };
+                setCards(prevState => [...prevState, newCard]);                   
+            }
+    
+            }
 
 
-
+      }, [mode]);
 
     return (
         <>
@@ -146,7 +211,12 @@ function Index() {
                 <div className="right">
 
                     <div className="top">
-                        <h1>Recebíveis e despesas</h1>
+                        <button type="button" className="retorno"> <h2>{'<'}</h2> </button>
+                        <button type="button" className="filtro" onClick={handleFilter}>
+                        <h1>{titulo}</h1>
+                            
+                            
+                        </button>
                     </div>
 
                     <div className="botton">

@@ -1,11 +1,11 @@
 import "./styles.css";
 
-export function Card() {
+export function Card(props) {
   return (
     <div className="card">
-     <strong> R$ 5000 </strong>
+     <strong> {props.valor}</strong>
      <p></p>
-      <strong>10 X</strong>
+      <strong>{props.parcelas}</strong>
     </div>
   );
 }

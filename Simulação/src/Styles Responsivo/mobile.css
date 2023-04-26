@@ -1,0 +1,355 @@
+/* 480px - 768px = tablet */
+@media (min-width: 480px) and (max-width: 767px){
+   
+    .Desktop{
+        /* Background 1*/
+        box-sizing: border-box;
+    
+        position: relative;
+        width: 1260vw;
+        height: 1024vh;
+        
+    }
+    .Desktop h1{
+
+        /* Rentângulo do Simulador de Vendas */
+        position: absolute;
+        width: 92vw;
+        height: 13vh;
+        left: 3vw;
+        top: -3vh;
+     
+  }
+
+  .simuladordevendas{
+
+    /* Simulador de Vendas*/
+    position: absolute;
+    width: 482px;
+    height: 0px;
+    left: 90px;
+    top: 10px;
+            
+    font-size: 32px;
+}
+
+.Desktop h2{
+    /*Background 2*/
+    position: absolute;
+    width: 88vw;
+    height: 160vh;
+    left: 6vw;
+    top: 12vh;   
+}
+
+.valordoproduto{
+
+    /*caixa azul*/
+    position: absolute;    
+
+    /*Valor do Produto*/
+    position: absolute;
+    width:30vw;
+    height:15vh;
+    left: 15vw;
+    top: 0vh; 
+    font-size: 24px;    
+}
+
+.pagamento{
+    
+    /* botão azul */
+
+    position: absolute;
+ 
+    /* Bandeira do Cartão */
+    position: absolute;
+    width: 30vw;
+    height:15vh;
+    left: 15vw;
+    top: 50vh; ;
+    font-size: 24px;
+}
+
+.taxadamaquininha{
+
+    /* botão azul */
+    position: absolute;
+
+    /* Taxa da Maquininha */
+
+    position: absolute;
+    width: 30vw;
+    height:15vh;
+    left: 15vw;
+    top: 25vh; ;
+    font-size: 24px;
+}
+
+.ndeparcelas{
+
+    /* botão azul */
+    position: absolute;
+
+    /* Nº de Parcelas */
+
+    position: absolute;
+    width: 30vw;
+    height:15vh;
+    left: 15vw;
+    top: 75vh; ;
+    font-size: 24px;
+}
+
+.rs{
+
+    /*Input valor do Produto*/
+
+    position: absolute;
+    width: 20vw;
+    height:7vh;
+    left: 63vw;
+    top: 8.8vh;
+    font-size: 22px;
+}
+
+.taxa{
+
+    /* Input da Taxa */
+
+    position: absolute;
+    width: 20vw;
+    height:7vh;
+    left: 53vw;
+    top: 33.8vh;
+    font-size: 24px;
+}
+
+.pagamentos{
+
+    /* Input de Forma de Pagamento */
+    position: absolute;
+    width: 30vw;
+    height:7vh;
+    left: 53vw;
+    top: 58.8vh;
+    font-size: 24px;
+}
+
+.parcela{
+
+    /*Input Nº de Parcelas*/
+
+    position: absolute;
+    width: 20vw;
+    height:7vh;
+    left: 53vw;
+    top: 83.8vh;
+    font-size: 24px;
+}
+
+.section1{
+
+    /* Section 1 */
+
+
+    position: absolute;
+    width: 10vw;
+    height:7vh;
+    left: 53vw;
+    top: 5vh;
+         
+}
+
+.money{
+
+    /* R$ */
+
+    position: absolute;
+    width: 10vw;
+    height:7vh;
+    left: 54vw;
+    top: 7.5vh;
+    font-size: 20px;
+}
+
+.section2{
+
+    /* Section 2 */
+    position: absolute;
+    width: 10vw;
+    height:7vh;
+    left: 73vw;
+    top: 30vh;
+}
+
+.juros{
+
+    /* % */
+    position: absolute;
+    width: 10vw;
+    height:7vh;
+    left: 73vw;
+    top: 31vh;
+    font-size: 24px;
+
+}
+
+.section3{
+
+    /* Section 3 */
+    position: absolute;
+    width: 10vw;
+    height:7vh;
+    left: 73vw;
+    top: 80vh;
+}
+
+.vezes{
+
+    /* X */
+    position: absolute;
+    width: 10vw;
+    height:7vh;
+    left: 72vw;
+    top: 81vh;
+    font-size: 24px;
+}
+
+/*  Tabela  */
+.tabela{
+
+    /*Tabela*/
+    position: absolute;
+    width: 84vw;
+    height:55vh;
+    left: 2vw;
+    top: 98vh; 
+}
+
+.linha1{
+
+    /*Linha 1*/
+
+    position: absolute;
+    width: 82.8vw;
+    height: 0vh;
+    left: 2vw;
+    top: 110vh;
+
+}
+
+.linha2{
+
+    /*Linha 2*/
+
+    position: absolute;
+    width: 82.8vw;
+    height: 0vh;
+    left: 2vw;
+    top: 122vh;
+}
+
+.linha3{
+
+    /*Linha 3*/
+
+    position: absolute;
+    width: 82.8vw;
+    height: 0vh;
+    left: 2vw;
+    top: 137vh;
+}
+
+.coluna1{
+
+    /*Coluna1*/
+
+    position: absolute;
+    width: 71.5vw;
+    height: 0vh;
+    left: -6.5vw;
+    top: 125vh;
+}
+
+.coluna2{
+
+    /*Coluna2*/
+
+    position: absolute;
+    width: 71.5vw;
+    height: 0vh;
+    left: 23vw;
+    top: 125vh;
+}
+
+.formadepagamento{
+
+    /* Forma de Pagamento */
+
+    position: absolute;
+    left: 5vw;
+    top: 100vh; 
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.valorasercobrado{
+
+    /* Valor a ser Cobrado */
+    position: absolute;
+    left: 34vw;
+    top: 100vh; 
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.valoraserrecebido{
+
+    /* Valor a ser Recebido */
+    position: absolute;
+    left: 63vw;
+    top: 100vh; 
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.debito{
+
+    /* Débito */
+    position: absolute;
+    left: 8vw;
+    top: 113vh; 
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.creditoavista{
+
+    /* Crédito à Vista */
+    position: absolute;
+    left: 5vw;
+    top: 126vh; 
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.creditoparcelado{
+
+    /* Crédito Parcelado */
+    position: absolute;
+    left: 5vw;
+    top: 140vh; 
+    font-size: 20px;
+    line-height: 22px;
+}
+
+/*  GUIA DE NAVEGAÇÃO */
+
+.Desktop h3{
+
+  display: none;
+
+}
+
+}

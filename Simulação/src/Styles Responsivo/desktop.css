@@ -40,7 +40,7 @@
         /*Background 2*/
         position: absolute;
         width: 63vw;
-        height: 143vh;
+        height: 140vh;
         left: 55vw;
         top: 17vh;    
     }
@@ -108,8 +108,6 @@
     .rs{
 
         /*Input valor do Produto*/
-    
-    
         position: absolute;
         width: 10vw;
         height:7vh;
@@ -300,7 +298,6 @@
     position: absolute;
     left: 23.5vw;
     top: 80vh; 
-
     font-size: 24px;
 }
 
@@ -346,5 +343,4 @@
 
 
   }
-
 

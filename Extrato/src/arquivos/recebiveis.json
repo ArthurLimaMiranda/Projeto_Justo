@@ -6,7 +6,7 @@
         {
           "id": 1,
           "code": "19:32:14181",
-          "modoDePagamento": "Maquinha - Credito parcelado",
+          "modoDePagamento": "Maquinha - Credito Parcelado",
           "valor": "34.50",
           "dataDeDebito": "2023-05-25",
           "classe": "Recebiveis",

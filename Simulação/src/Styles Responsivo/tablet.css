@@ -1,42 +1,56 @@
-/* 480px - 768px = tablet */
-@media (min-width: 480px) and (max-width: 768px){
-   
-    .Desktop{
-        /* Background 1*/
-        box-sizing: border-box;
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
     
-        position: relative;
-        width: 1200px;
-        height: 1540px;
-        
-    }
-    .Desktop h1{
 
-        /* Rentângulo do Simulador de Vendas */
-        position: absolute;
-        width: 700px;
-        height: 80px;
-        left: 438px;
-        top: 62px;
-     
+
+/*  GUIA DE NAVEGAÇÃO */
+
+.Desktop h3{
+
+    display: none;
+  
   }
 
-  .simuladordevendas{
+.Desktop{
+    /* Background 1*/
+    box-sizing: border-box;
+
+    position: relative;
+    width: 1260vw;
+    height: 1024vh;
+    
+}
+
+.Desktop h1{
+
+    /* Rentângulo do Simulador de Vendas */
+    position: absolute;
+    width: 95vw;
+    height: 15vh;
+    left: 19vw;
+    top: -3vh;
+ 
+}
+
+.simuladordevendas{
 
     /* Simulador de Vendas*/
     position: absolute;
-    width: 382px;
+    width: 482px;
     height: 0px;
-    left: 180px;
-    top: 0px;
-        
-    font-size: 40px;
+    left: 210px;
+    top: 10px;
+            
+    font-size: 38px;
 }
 
 .Desktop h2{
     /*Background 2*/
-    width: 700px;
-    height: 1320px;    
+    position: absolute;
+    width: 94vw;
+    height: 183vh;
+    left: 20vw;
+    top: 15vh;   
 }
 
 .valordoproduto{
@@ -46,12 +60,11 @@
 
     /*Valor do Produto*/
     position: absolute;
-    width: 240px;
-    height: 140px;
-    left: 30px;
-    top: 30px;
-
-    font-size: 38px;     
+    width:25vw;
+    height:16vh;
+    left: 15vw;
+    top: 0vh; 
+    font-size: 28px;    
 }
 
 .pagamento{
@@ -62,12 +75,11 @@
  
     /* Bandeira do Cartão */
     position: absolute;
-    width: 240px;
-    height: 140px;
-    left: 30px;
-    top: 230px;
-
-    font-size: 38px;
+    width:25vw;
+    height:16vh;
+    left: 15vw;
+    top: 50vh; 
+    font-size: 28px;  
 }
 
 .taxadamaquininha{
@@ -78,12 +90,11 @@
     /* Taxa da Maquininha */
 
     position: absolute;
-    width: 240px;
-    height: 140px;
-    left: 30px;
-    top: 430px;
-
-    font-size: 38px;
+    width:25vw;
+    height:16vh;
+    left: 15vw;
+    top: 25vh; 
+    font-size: 28px; 
 }
 
 .ndeparcelas{
@@ -94,65 +105,25 @@
     /* Nº de Parcelas */
 
     position: absolute;
-    width: 240px;
-    height: 140px;
-    left: 30px;
-    top: 630px;
-
-    font-size: 38px;
+    width:25vw;
+    height:16vh;
+    left: 15vw;
+    top: 75vh; 
+    font-size: 28px; 
 }
+
+/*  Inputs  */
 
 .rs{
 
     /*Input valor do Produto*/
 
-
     position: absolute;
-    width: 150px;
-    height: 70px;
-    left: 380px;
-    top: 81px;
-
-    font-size: 22px;
-}
-
-.taxa{
-
-    /* Input da Taxa */
-
-    position: absolute;
-    width: 150px;
-    height: 70px;
-    left: 500px;
-    top: 480px;
-
-    font-size: 25px;
-}
-
-.pagamentos{
-
-    /* Input de Forma de Pagamento */
-    position: absolute;
-    width: 150px;
-    height: 70px;
-    left: 500px;;
-    top: 280px;
-
-    font-size: 24px;
-}
-
-.parcela{
-
-    /*Input Nº de Parcelas*/
-
-    position: absolute;
-    width: 150px;
-    height: 70px;
-    left: 500px;
-    top: 680px;
-
-    font-size: 28px;
-    line-height: 23px;
+    width: 15vw;
+    height:7vh;
+    left: 57vw;
+    top: 9.8vh;
+    font-size: 26px;
 }
 
 .section1{
@@ -161,10 +132,10 @@
 
 
     position: absolute;
-    width: 50px;
-    height: 70px;
-    left: 300px;
-    top: 57px;
+    width: 7vw;
+    height:7vh;
+    left: 50vw;
+    top: 6vh;
          
 }
 
@@ -172,71 +143,165 @@
 
     /* R$ */
 
-    position: absolute;
-    width: 25px;
-    height: 23px;
-    left: 320px;
-    top: 74px;
 
-    font-size: 20px;
-    line-height: 23px;  
+    position: absolute;
+    width: 7vw;
+    height:7vh;
+    left: 50.5vw;
+    top: 8vh;
+    font-size: 22px;
+}
+
+.taxa{
+
+    /* Input da Taxa */
+
+    position: absolute;
+    width: 15vw;
+    height:7vh;
+    left: 50vw;
+    top: 34vh;
+    font-size: 26px;
 }
 
 .section2{
 
-    /* Section 2 */
     position: absolute;
-    width: 44px;
-    height: 70px;
-    left: 619px;
-    top: 456px;
+    width: 7vw;
+    height:7vh;
+    left: 65vw;
+    top: 30.2vh;
 }
 
 .juros{
 
     /* % */
     position: absolute;
-    width: 18px;
-    height: 28px;
-    left: 623px;
-    top: 465px;
-
+    width: 7vw;
+    height:7vh;
+    left: 64.5vw;
+    top: 31.2vh;
     font-size: 26px;
-    line-height: 28px;
+
+}
+
+.pagamentos{
+
+    /* Input de Forma de Pagamento */
+    position: absolute;
+    width: 22vw;
+    height:7vh;
+    left: 50vw;
+    top: 59vh;
+    font-size: 24px;
+}
+
+.parcela{
+
+    /*Input Nº de Parcelas*/
+
+    position: absolute;
+    width: 15vw;
+    height:7vh;
+    left: 50vw;
+    top: 84vh;
+    font-size: 26px;
 }
 
 .section3{
 
     /* Section 3 */
     position: absolute;
-    width: 44px;
-    height: 70px;
-    left: 619px;
-    top: 656px;
+    width: 7vw;
+    height:7vh;
+    left: 65vw;
+    top: 80.2vh;
 }
 
 .vezes{
 
     /* X */
     position: absolute;
-    width: 18px;
-    height: 28px;
-    left: 625px;
-    top: 666px;
-
-    font-size: 24px;
-    line-height: 28px;
+    width: 7vw;
+    height:7vh;
+    left: 64.5vw;
+    top: 81vh;
+    font-size: 26px;
 }
+
+
 
 /*  Tabela  */
 .tabela{
 
     /*Tabela*/
     position: absolute;
-    width: 650px;
-    height: 430px;
-    left: 30px;
-    top: 800px;
+    width: 90vw;
+    height:75vh;
+    left: 2vw;
+    top: 98vh; 
+}
+
+.formadepagamento{
+
+    /* Forma de Pagamento */
+
+    position: absolute;
+    left: 8vw;
+    top: 100vh; 
+    font-size: 26px;
+}
+
+.valorasercobrado{
+
+    /* Valor a ser Cobrado */
+    position: absolute;
+    left: 38vw;
+    top: 100vh;
+    width: 150px; 
+    font-size: 26px;
+
+}
+
+.valoraserrecebido{
+
+    /* Valor a ser Recebido */
+    position: absolute;
+    left: 68vw;
+    top: 100vh; 
+    width: 150px;
+    font-size: 26px;
+}
+
+.debito{
+
+    /* Débito */
+    position: absolute;
+    left: 10vw;
+    top: 116vh; 
+    font-size: 28px;
+}
+
+.creditoavista{
+
+    /* Crédito à Vista */
+    position: absolute;
+    left: 5vw;
+    top: 135vh;
+    width: 150px; 
+    font-size: 28px;
+
+}
+
+.creditoparcelado{
+
+    /* Crédito Parcelado */
+    position: absolute;
+    left: 5vw;
+    top: 155vh;
+    width: 150px; 
+    font-size: 28px;
+
 }
 
 .linha1{
@@ -244,33 +309,31 @@
     /*Linha 1*/
 
     position: absolute;
-    width: 644px;
-    height: 0px;
-    left: 30px;
-    top: 880px;
+    width: 89.3vw;
+    height: 0vh;
+    left: 2vw;
+    top: 112vh;
 
 }
 
 .linha2{
 
     /*Linha 2*/
-
     position: absolute;
-    width: 644px;
-    height: 0px;
-    left: 30px;
-    top: 990px;
+    width: 89.3vw;
+    height: 0vh;
+    left: 2vw;
+    top: 128vh;
 }
 
 .linha3{
 
     /*Linha 3*/
-
     position: absolute;
-    width: 644px;
-    height: 0px;
-    left: 30px;
-    top: 1105px;
+    width: 89.3vw;
+    height: 0vh;
+    left: 2vw;
+    top: 150vh;
 }
 
 .coluna1{
@@ -278,10 +341,10 @@
     /*Coluna1*/
 
     position: absolute;
-    width: 425px;
-    height: 0px;
-    left: 10px;
-    top: 1015px;
+    width: 61.5vw;
+    height: 0vh;
+    left: 1vw;
+    top: 135vh;
 }
 
 .coluna2{
@@ -289,91 +352,10 @@
     /*Coluna2*/
 
     position: absolute;
-    width: 425px;
-    height: 0px;
-    left: 240px;
-    top: 1015px;
-}
-
-.formadepagamento{
-
-    /* Forma de Pagamento */
-
-
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 30px;
-    top: 810px;
-
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.valorasercobrado{
-
-    /* Valor a ser Cobrado */
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 240px;
-    top: 810px;
-
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.valoraserrecebido{
-
-    /* Valor a ser Recebido */
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 470px;
-    top: 810px;
-
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.debito{
-
-    /* Débito */
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 80px;
-    top: 900px;
-
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 29px;
-}
-
-.creditoavista{
-
-    /* Crédito à Vista */
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 45px;
-    top: 1025px;
-
-    font-size: 26px;
-    line-height: 29px;
-}
-
-.creditoparcelado{
-
-    /* Crédito Parcelado */
-    position: absolute;
-    width: 181px;
-    height: 52px;
-    left: 35px;
-    top: 1135px;
-
-    font-size: 28px;
-    line-height: 29px;
+    width: 61.5vw;
+    height: 0vh;
+    left: 33vw;
+    top: 135vh;
 }
 
 }

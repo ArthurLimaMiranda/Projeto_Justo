@@ -11,7 +11,7 @@ function Header(props) {
         <div className="header">
             <div className="menubar">
                 <button><FaArrowLeft /></button>
-                <strong>EXTRATO</strong>
+                <h1>EXTRATO</h1>
                 <button onClick={props.toggle}><FaBars /></button>
             </div>
             <br></br>

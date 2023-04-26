@@ -1,8 +1,8 @@
 .card {
-    background-color: rgb(21, 171, 221);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     height: 80px;
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,10 +22,4 @@
 
 .green {
     color: rgb(19, 224, 19);
-}
-
-@media (max-width: 700px) {
-    .card {
-        width: 80%;
-    }
 }
