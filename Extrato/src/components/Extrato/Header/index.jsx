@@ -10,9 +10,9 @@ function Header(props) {
     return (
         <div className="header">
             <div className="menubar">
-                <button id="back"><FaArrowLeft /></button>
-                <strong>EXTRATO</strong>
-                <button><FaBars /></button>
+                <button><FaArrowLeft /></button>
+                <h1>EXTRATO</h1>
+                <button onClick={props.toggle}><FaBars /></button>
             </div>
             <br></br>
             <div className="balance">

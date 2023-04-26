@@ -17,3 +17,9 @@
     font-size: 30px;
     color: #ffffff;
 }
+
+@media (max-width: 700px) {
+    #noSidebar {
+        display: none
+    }
+}
