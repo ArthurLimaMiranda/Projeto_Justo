@@ -1,0 +1,49 @@
+{
+    "records": [
+      {
+        "id": 1,
+        "despesasMes": [
+          {
+            "id": 1,
+            "mes": "Janeiro",
+            "ano": "2023",
+            "valor": "1200.17"
+          },
+          {
+            "id": 1,
+            "mes": "Fevereiro",
+            "ano": "2023",
+            "valor": "978.12"
+          },
+          {
+            "id": 1,
+            "mes": "Março",
+            "ano": "2023",
+            "valor": "1789.17"
+          },
+          {
+            "id": 1,
+            "mes": "Abril",
+            "ano": "2023",
+            "valor": "120.98"
+          },
+          {
+            "id": 1,
+            "mes": "Maio",
+            "ano": "2023",
+            "valor": "2312.32"
+          },
+          {
+            "id": 1,
+            "mes": "Junho",
+            "ano": "2023",
+            "valor": "1200.17"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "despesasMes": []
+      }
+    ]
+  }
