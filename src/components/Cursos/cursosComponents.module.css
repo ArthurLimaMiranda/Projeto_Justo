@@ -1,0 +1,40 @@
+body {
+    background-color: darkslateblue;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+.coluna_videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_videos {
+    display: flex;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.blocoVideos {
+    width: 800px; /* largura das divs */
+    height: 450px; /* altura das divs */
+    margin-right: 150px; /* espaço entre as divs */
+
+    margin-bottom: 35px;
+}
+
+.blocoVideos2 {
+    width: 100px; /* largura das divs */
+    height: 100px; /* altura das divs */
+    margin-right: 10px; /* espaço entre as divs */
+
+}
+
+.title_videos {
+   width: 540px;
+}

@@ -1,0 +1,27 @@
+.sidebar {
+    float: left;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 24vw;
+
+    padding-top: 20px;
+
+    background-color: rgb(10, 79, 106);
+    
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+.sidebarTitle {
+    margin-bottom: 85px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        display: none
+    }
+}
