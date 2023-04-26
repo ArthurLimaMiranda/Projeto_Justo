@@ -1,10 +1,16 @@
 import "./styles.css";
+import { FaArrowLeft } from 'react-icons/fa';
+
 
 export function Menu() {
   return (
+    
     <div className="menu">
+      <FaArrowLeft />
       <h2>EMPRÉSTIMO</h2>
+      
       <h3>
+        
           <p className='justa'>Justa</p>
           <p className='traço'></p>
           <p className='bloco1'></p>
@@ -21,6 +27,7 @@ export function Menu() {
           <p className='emprestimo'>Empréstimo</p>
           
       </h3>
+
 
     </div>
   );
