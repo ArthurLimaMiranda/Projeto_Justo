@@ -1,44 +1,65 @@
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-  }
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  margin: 5% 0 3%;
+}
+
+.container input {
+  width: 70%;
+  padding: 2%;
+
+  background: hsl(0, 0%, 90%);
+  border-radius: 5px;
+  border: none;
+
+  font-size: 2vw;
+}
+
+.container button {
+  width: 40%;
+  padding: 2.5%;
+
+  font-weight: 500;
+
+  background: rgb(16, 72, 203);
+  color: #fff;
+
+  border-radius: 5px;
+  margin: 3% 0 10%;
+  border: none;
+
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  font-size: 2vw;
+}
+
+.container button:hover {
+  filter: brightness(0.9);
+}
+
+@media (min-width: 768px) {
   .container h1 {
-    margin: 84px 0 24px;
+    margin: 3% 0 2%;
   }
-  
+
   .container input {
-    width: 14%;
-    padding: 20px;
-  
-    background: hsl(0, 0%, 90%);
-    border-radius: 5px;
-    border: none;
-  
-    font-size: 20px;
+    width: 40%;
+    padding: 1.5%;
+
+    font-size: 1.5vw;
   }
-  
+
   .container button {
-    width: 10%;
-    padding: 14px;
-  
-    font-weight: 500;
-  
-    background: rgb(16, 72, 203);
-    color: #fff;
-  
-    border-radius: 5px;
-    margin: 12px 0 84px;
-    border: none;
-  
-    cursor: pointer;
-    transition: filter 0.2s;
-  
-    font-size: 20px;
+    width: 20%;
+    padding: 1.5%;
+
+    margin: 2% 0 8%;
+
+    font-size: 1.5vw;
   }
-  
-  .container button:hover {
-    filter: brightness(0.9);
-  }
- 
+}
