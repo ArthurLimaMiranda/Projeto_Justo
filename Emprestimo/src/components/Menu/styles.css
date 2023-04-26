@@ -11,7 +11,7 @@
 }
 h2{
   background-color: #00396A;
-  font-size: 5vh;
+  font-size: 3.5vh;
 }
 
 h3 {
@@ -30,9 +30,12 @@ h3 {
 
 .justa {
     position: absolute;
-    width: 33vw;
-    left: -7vw;
-    top: -3vh;
+    width: 5vw;
+    left: -2vw;
+    width: 60%;
+    max-width: 200px;
+    margin: 10 5;
+    top: 1vh;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -40,6 +43,9 @@ h3 {
     line-height: 1.2;
     text-align: center;
     color: white;
+  
+  
+  
 }
 
 
@@ -107,7 +113,7 @@ h3 {
     width: 15%;
     height: 3%;
     left: 3%;
-    top: 23%;
+    top: 25%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
