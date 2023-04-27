@@ -276,6 +276,10 @@ function Graficos() {
   
   var meses = []
 
+
+
+
+  
   if (selectAno == "2022") {
     filtroDespesas = despesasPorMes[0]["2022"].map(despesas => despesas.valor)
     filtroRecebiveis = recebiveisPorMes[0]["2022"].map(recebiveis => recebiveis.valor)

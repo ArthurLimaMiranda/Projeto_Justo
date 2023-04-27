@@ -68,16 +68,13 @@
 }
 
 .taxadamaquininha, .ndeparcelas, .valordoproduto, .pagamento{
-    width: 12vw;
-    height: 12vh;
-    margin-bottom: 5vh;
+    width: 15vw;
+    height: 15vh;
+    margin-bottom: 3vh;
     text-align: center;
     
 }
 
-.ndeparcelas{
-    padding-top: 2vh;
-}
 
 .rs, .taxa, .pagamentos, .parcela{
     margin-top: 3.5vh;
