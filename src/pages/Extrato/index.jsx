@@ -3,6 +3,7 @@ import Header from '../../components/Extrato/Header'
 import Card from '../../components/Extrato/Card/index.jsx'
 import extratoStyle from "./styles.module.css"
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
+import ButtonSidebar from '../../components/Inicio/Button/buttonSidebar'
 
 function Extrato() {
   const [description, setDescription] = useState();

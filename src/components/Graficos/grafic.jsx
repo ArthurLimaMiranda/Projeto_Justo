@@ -32,8 +32,8 @@ function Graph({title, mes_1, mes_2, mes_3, mes_4, mes_5, mes_6, valor_1, valor_
                     labelRadius={120} // define o raio para os rótulos
                 
             
-                    width={500}
-                    height={400}
+                    width={600}
+                    height={500}
                 />
             </div>
         </>

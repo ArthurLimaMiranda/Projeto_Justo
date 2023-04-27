@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Graph from '../../components/Graficos/grafic'
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar';
 import './graficos.css'
+import ButtonSidebar from '../../components/Inicio/Button/buttonSidebar';
 
 function Graficos() {
   const [selectAno, setSelectAno] = useState("");
@@ -296,6 +297,9 @@ function Graficos() {
     <>
     <Sidebar/>
       <div id='page_grafic'>
+      <div>
+        <ButtonSidebar/>
+      </div>
         <h1>Gráficos</h1>
         <div className='checkbox'>
           <h3>Escolha o Ano que você quer acessar</h3>

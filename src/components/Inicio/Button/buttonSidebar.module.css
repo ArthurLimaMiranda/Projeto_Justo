@@ -1,0 +1,16 @@
+.buttonDivSidebar {
+    display: none;
+}
+
+@media (max-width: 767px){
+    .buttonDivSidebar {
+        display: flex;
+        justify-content: center;
+
+        background-color: rgb(10, 79, 106);
+        color: whitesmoke;
+        
+        font-size: 27px;
+        padding: 7px 0 3px 0;
+    }
+}

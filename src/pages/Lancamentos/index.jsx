@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import lancStyle from "./styles.module.css"
 import { CardLanc } from '../../components/CardLanc';
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
+import ButtonSidebar from '../../components/Inicio/Button/buttonSidebar';
 
 function Index() {
 
@@ -214,7 +215,7 @@ function Index() {
                 <div className={lancStyle.right}>
 
                     <div className={lancStyle.top}>
-                        <button type="button" className={lancStyle.retorno}> <h2>{'<'}</h2> </button>
+                        <a href='http://localhost:5173/Inicio' className={lancStyle.retorno}> <h2>{'<'}</h2> </a>
                         <button type="button" className={lancStyle.filtro} onClick={handleFilter}>
                         <h1>{titulo}</h1>
                             

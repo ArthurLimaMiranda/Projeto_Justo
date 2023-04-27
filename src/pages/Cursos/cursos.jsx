@@ -1,12 +1,17 @@
 import Videos from '../../components/Cursos/headerCursos'
-import VideosBloco2 from '../../components/Cursos/bloco2'
 import cursosStyle from "./cursos.module.css"
+import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
+import ButtonSidebar from '../../components/Inicio/Button/buttonSidebar'
 
 function Cursos() {
     return (
         <>
+            <Sidebar />
             <div className={cursosStyle.cursos}>
                 <div className={cursosStyle.title_cursos}>
+                    <div>
+                        <ButtonSidebar/>
+                    </div>
                     <h1 className={cursosStyle.cursosH1}>Cursos</h1>
                 </div>
                 <Videos 
@@ -15,10 +20,6 @@ function Cursos() {
                     video_2="https://www.youtube.com/embed/-iKtTNZ02-Y"
                     title_video_1="O que são e para que serve Metodologias Ágeis?"
                     title_video_2="SCRUM, como implementar no seu dia a dia"  
-                />
-                <VideosBloco2
-                    video="https://www.youtube.com/embed/S9JmZMDLauA"   
-                    title_video="Duplo diamante na prática"
                 />
 
                 <Videos 

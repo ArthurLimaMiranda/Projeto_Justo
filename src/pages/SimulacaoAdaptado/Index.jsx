@@ -3,6 +3,7 @@ import { useState } from 'react'
 import simulStyle from "./styles.module.css"
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
 import { Valor } from "../../components/Valores e TaxasAdaptado/index";
+import ButtonSidebar from '../../components/Inicio/Button/buttonSidebar';
 
 function Simulacao() {
 
@@ -72,6 +73,10 @@ function Simulacao() {
 
           <div className={simulStyle.Navegacao}>
             <Sidebar />
+          </div>
+
+          <div>
+            <ButtonSidebar/>
           </div>
 
           <div className={simulStyle.Simulator}>

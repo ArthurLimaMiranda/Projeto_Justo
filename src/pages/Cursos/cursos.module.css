@@ -4,11 +4,23 @@
     margin-left: 300px;
 }
 
-.title_cursos {
-    background-color: blue;
-}
-
 .cursosH1 {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 45px;
+}
+
+
+@media (max-width: 767px){
+    .cursos {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .cursosH1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
 }

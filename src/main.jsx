@@ -10,6 +10,7 @@ import Emprestimo from './pages/Emprestimo/index';
 
 import './styles/global.css'
 import Graficos from './pages/Graficos/graficos';
+import Sidebar_mobile from './components/Inicio/Sidebar_mobile/Sidebar_mobile';
 
 const routes = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +20,7 @@ routes.render(
       
         <Routes>
           <Route exact path='/' static element={<Extrato />} />
+          <Route exact path='/Inicio' static element={<Sidebar_mobile />} />
           <Route exact path='/Lancamentos' static element={<Index />} />
           <Route exact path='/Cursos' static element={<Cursos />} />
           <Route exact path='/Simulacao' static element={<Simulacao />} />

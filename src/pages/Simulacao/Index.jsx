@@ -8,8 +8,7 @@ import "../../Styles Responsivo/tablet.css"
 
 import { Valor } from"../../components/Valores e Taxas/index";
 
-
-
+import ButtonSidebar from '../../components/Inicio/Button/buttonSidebar'
 
 function Simulacao() {
 
@@ -75,6 +74,9 @@ function Simulacao() {
 
   return (
     <div className='Desktop'>
+      <div>
+        <ButtonSidebar/>
+      </div>
       
       <h1>
         <p className="simuladordevendas">Simulador de Vendas</p>

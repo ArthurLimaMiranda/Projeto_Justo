@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import emprestimoStyle from "./styles.module.css"
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
 import {Card} from '../../components/Card';
+import ButtonSidebar from "../../components/Inicio/Button/buttonSidebar";
 
 function Emprestimo() {
   const [emprestimoValor, setEmprestimoValor] = useState("");
@@ -65,7 +66,7 @@ function Emprestimo() {
         <div className={emprestimoStyle.Topo}>
 
           <div className={emprestimoStyle.tit}>
-            <button type="button" className={emprestimoStyle.retorno}> <h2>{'<'}</h2> </button>
+            <a href='http://localhost:5173/Inicio' className={emprestimoStyle.retorno}> <h2>{'<'}</h2> </a>
             <h2>EMPRÉSTIMO</h2>
           </div>
           

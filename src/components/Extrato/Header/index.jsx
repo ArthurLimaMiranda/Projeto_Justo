@@ -10,7 +10,7 @@ function Header(props) {
     return (
         <div className={headerStyle.header}>
             <div className={headerStyle.menubar}>
-                <button><FaArrowLeft /></button>
+                <a href="http://localhost:5173/Inicio"><FaArrowLeft /></a>
                 <h1>EXTRATO</h1>
                 <button onClick={props.toggle}><FaBars /></button>
             </div>
