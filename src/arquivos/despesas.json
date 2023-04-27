@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "despesas": [
+        {
+          "id": 1,
+          "code": "19:33:34515",
+          "modoDePagamento": "Maquinha - Debito",
+          "valor": "500.00",
+          "dataDeDebito": "2023-01-13",
+          "classe": "Despesas",
+          "dataDeCriacao": "2023-04-24"
+        },
+        {
+          "id": 1,
+          "code": "19:33:45549",
+          "modoDePagamento": "Maquinha - Debito",
+          "valor": "500.00",
+          "dataDeDebito": "2022-02-04",
+          "classe": "Despesas",
+          "dataDeCriacao": "2023-04-24"
+        },
+        {
+          "id": 1,
+          "code": "19:33:5837",
+          "modoDePagamento": "Maquinha - Debito",
+          "valor": "500.00",
+          "dataDeDebito": "2025-07-04",
+          "classe": "Despesas",
+          "dataDeCriacao": "2023-04-24"
+        },
+        {
+          "id": 1,
+          "code": "22:32:08786",
+          "modoDePagamento": "Mapito",
+          "valor": "432.34",
+          "dataDeDebito": "2023-04-28",
+          "classe": "Despesas",
+          "dataDeCriacao": "2023-04-24"
+        },
+        {
+          "id": 1,
+          "code": "18:23:33292",
+          "modoDePagamento": "TestandoIntegracao",
+          "valor": "3423.43",
+          "dataDeDebito": "2023-04-03",
+          "classe": "Despesas",
+          "dataDeCriacao": "2023-04-26"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "despesas": []
+    }
+  ]
+}
