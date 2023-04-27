@@ -2,16 +2,16 @@ import { useState } from 'react'
 import "./simuladorpage.css"
 import "./guiadenavegação.css"
 import "./tabela.css"
-import "../Styles Responsivo/desktop.css"
-import "../Styles Responsivo/mobile.css"
-import "../Styles Responsivo/tablet.css"
+import "../../Styles Responsivo/desktop.css"
+import "../../Styles Responsivo/mobile.css"
+import "../../Styles Responsivo/tablet.css"
 
-import { Valor } from"../Componentes/Valores e Taxas/index";
-
-
+import { Valor } from"../../components/Valores e Taxas/index";
 
 
-export function Home() {
+
+
+function Simulacao() {
 
   const [Voriginal, setVoriginal] = useState("");
   
@@ -143,3 +143,5 @@ export function Home() {
     
   )
 }
+
+export default Simulacao;

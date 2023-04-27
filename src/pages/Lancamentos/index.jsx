@@ -208,9 +208,7 @@ function Index() {
         <>
             <main>
                 <div className={lancStyle.left}>
-
                     <Sidebar />
-
                 </div>
 
                 <div className={lancStyle.right}>

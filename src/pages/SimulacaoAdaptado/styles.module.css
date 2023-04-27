@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Desktop{
+    background-color: #377EB8;
+    display: flex;
+}
+
+.Navegacao{
+    background-color: #00396A;
+    float: left;
+    position: sticky;
+    top: 0;
+    margin-left: 6vh;
+    margin-right: 6vw;
+    border-radius: 30px;
+    height: 100vh;
+    width: 24vw;
+}
+
+
+.Simulator{
+    float: right;
+    margin-top: 3vh;
+    width: 60vw;
+}
+
+.Titulo{
+    background-color: #00396A;
+    margin-bottom: 5vh;
+    padding: 1px;
+    height: 10vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F1EFF0;
+    background-color: #00396A;
+    text-align: center;
+}
+
+.Conteudo{
+    background-color: #4E94CD;
+    margin-top: 3vh;
+    padding: 2vh;
+    border-radius: 30px;
+}
+
+.Linha1, .Linha2, .Linha3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.valordoproduto, .pagamento{
+    background-color: #00396A;
+    margin-left: 2vw;
+    border-radius: 20px;
+}
+
+.taxadamaquininha, .ndeparcelas{
+    background-color: #00396A;
+    margin-right: 2vw;
+    border-radius: 20px;
+}
+
+.taxadamaquininha, .ndeparcelas, .valordoproduto, .pagamento{
+    width: 12vw;
+    height: 12vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    
+}
+
+.ndeparcelas{
+    padding-top: 2vh;
+}
+
+.rs, .taxa, .pagamentos, .parcela{
+    margin-top: 3.5vh;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+
+.rs{
+    width: 5vw;
+    margin-right: 19.5vw;
+}
+
+.taxa{
+    width: 5vw;
+}
+
+.pagamentos{
+    margin-right: 13.2vw;
+}
+
+
+.parcela{
+    width: 5vw;
+}
+
+
+.Fim{
+    background-color: #00396A;
+    margin: 2%;
+    padding: 4%;
+    border-radius: 30px;
+}
+
+
+.Linha3{
+    align-items: left;
+}
+
+.Coluna{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+p{
+    font-size: x-large;
+}
+
+.Esq{
+    text-align: center; 
+}
+.Esq p{
+    margin-top: 5vh;
+}
