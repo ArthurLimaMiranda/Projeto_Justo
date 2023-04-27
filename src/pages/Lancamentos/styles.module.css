@@ -41,6 +41,10 @@ main{
     border-width: 1px;
 }
 
+.retorno{
+    color: white;
+}
+
 @media screen and (min-width: 1080px){
 
     h1 {
