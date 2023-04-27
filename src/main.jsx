@@ -9,6 +9,7 @@ import Simulacao from './pages/SimulacaoAdaptado/Index';
 import Emprestimo from './pages/Emprestimo/index';
 
 import './styles/global.css'
+import Graficos from './pages/Graficos/graficos';
 
 const routes = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,6 +23,7 @@ routes.render(
           <Route exact path='/Cursos' static element={<Cursos />} />
           <Route exact path='/Simulacao' static element={<Simulacao />} />
           <Route exact path='/Emprestimo' static element={<Emprestimo />} />
+          <Route exact path='/Grafico' static element={<Graficos />} />
         </Routes>
       
     </BrowserRouter>

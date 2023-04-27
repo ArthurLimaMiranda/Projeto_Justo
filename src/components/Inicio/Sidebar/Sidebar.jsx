@@ -15,7 +15,7 @@ function Sidebar(props) {
               <SidebarItem href="http://localhost:5173/Simulacao" itemName="Simulação" />
               <SidebarItem href="http://localhost:5173/Lancamentos" itemName="Lançamentos" />
               <SidebarItem href="http://localhost:5173/Emprestimo" itemName="Empréstimo" />
-              <SidebarItem href="http://localhost:5173/" itemName="Gráficos" />
+              <SidebarItem href="http://localhost:5173/Grafico" itemName="Gráficos" />
               <SidebarItem href="http://localhost:5173/Cursos" itemName="Cursos" />
             </div>
         </div>    
