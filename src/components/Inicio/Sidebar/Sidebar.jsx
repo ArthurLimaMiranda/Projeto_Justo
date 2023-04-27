@@ -11,7 +11,7 @@ function Sidebar(props) {
               <h1>Justa</h1>
             </div>
             <div className={sidebarStyle.sidebarBloco}>
-              <SidebarItem href="http://localhost:5173/Extrato" itemName="Extrato" />
+              <SidebarItem href="http://localhost:5173/" itemName="Extrato" />
               <SidebarItem href="http://localhost:5173/Simulacao" itemName="Simulação" />
               <SidebarItem href="http://localhost:5173/Lancamentos" itemName="Lançamentos" />
               <SidebarItem href="http://localhost:5173/Emprestimo" itemName="Empréstimo" />
