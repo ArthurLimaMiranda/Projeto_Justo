@@ -11,7 +11,7 @@ function Graph({title, mes_1, mes_2, mes_3, mes_4, mes_5, mes_6, valor_1, valor_
         { x: mes_5, y: valor_5 },
         { x: mes_6, y: valor_6 }
       ];
-
+//
     return (
         <>
             <div id="grafico">
