@@ -6,7 +6,7 @@ import Cursos from './pages/Cursos/cursos';
 import Index from './pages/Lancamentos/index';
 import Extrato from './pages/Extrato/index';
 import Simulacao from './pages/SimulacaoAdaptado/Index';
-import Emprestimo from './pages/Emprestimo/Index';
+import Emprestimo from './pages/Emprestimo/index';
 
 
 
