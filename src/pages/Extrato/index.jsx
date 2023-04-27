@@ -56,7 +56,7 @@ function Extrato() {
     <div className={extratoStyle.Extrato}>
       <div className={extratoStyle.Side}>
         <Sidebar 
-            show={(isOpen) ? "sidebar" : "noSidebar"}
+            show={"sidebar"}
           />
       </div>      
         <div className={extratoStyle.container}>

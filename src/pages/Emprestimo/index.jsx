@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import emprestimoStyle from "./styles.module.css"
 import Sidebar from '../../components/Inicio/Sidebar/Sidebar'
 import {Card} from '../../components/Card';
-import {Menu} from '../../components/Menu';
 
 function Emprestimo() {
   const [emprestimoValor, setEmprestimoValor] = useState("");
@@ -56,23 +55,32 @@ function Emprestimo() {
   return (
     
     <div className={emprestimoStyle.container}>
+
       <div className={emprestimoStyle.Menu}>
         <Sidebar />
       </div>
+
       <div className={emprestimoStyle.Conteudo}>
+
         <div className={emprestimoStyle.Topo}>
-          <button type="button" className={emprestimoStyle.retorno}> <h2>{'<'}</h2> </button>
-          <h2>EMPRÉSTIMO</h2>
+
+          <div className={emprestimoStyle.tit}>
+            <button type="button" className={emprestimoStyle.retorno}> <h2>{'<'}</h2> </button>
+            <h2>EMPRÉSTIMO</h2>
+          </div>
+          
+
+          <div className={emprestimoStyle.empr}>
+            <h3 className={emprestimoStyle.txt}>Valor do empréstimo </h3>
+            <input type="text" placeholder="R$ 500 - R$ 10.000"  className={emprestimoStyle.inp} onChange={(e) => setEmprestimoValor(e.target.value)}  />
+            <h3 className={emprestimoStyle.txt}>Quantidade de parcelas </h3>
+            <input type="text" placeholder="Ex: 10 parcelas "  className={emprestimoStyle.inp} onChange={(e) => setEmprestimoParcelas(e.target.value)} /> 
+          </div>
+
         </div>
 
         <div className={emprestimoStyle.Baixo}>
-          <h3>Valor do empréstimo </h3>
-          <input type="text" placeholder="R$ 500 - R$ 10.000"   onChange={(e) => setEmprestimoValor(e.target.value)}  />
-            <p></p>
-          <h3>Quantidade de parcelas </h3>
-          <input type="text" placeholder="Ex: 10 parcelas "   onChange={(e) => setEmprestimoParcelas(e.target.value)} />
-          <p></p>
-          <button type="button" onClick={handleAddEmprestimo}>Confirmar</button>
+          <button type="button" className={emprestimoStyle.but} onClick={handleAddEmprestimo}>Confirmar</button>
           {emprestimo.map((emprestimo) => <Card valor= {emprestimo.valor} parcelas= {emprestimo.parcelas}/>  )}
         </div>
       </div>        
