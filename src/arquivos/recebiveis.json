@@ -29,6 +29,16 @@
           "dataDeDebito": "2023-04-03",
           "classe": "Recebiveis",
           "dataDeCriacao": "2023-04-24"
+        },
+        {
+          "id": 1,
+          "code": "00:33:05404",
+          "dataDeCriacao": "2023-04-27"
+        },
+        {
+          "id": 1,
+          "code": "00:33:0785",
+          "dataDeCriacao": "2023-04-27"
         }
       ]
     },

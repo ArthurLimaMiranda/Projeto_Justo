@@ -1,0 +1,14 @@
+.Coluna2{
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: 17vw 17vw;
+    grid-row-gap: 7vh;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.griditem {
+    
+    border-right: 1px solid black; /* add a border to the grid items */
+}

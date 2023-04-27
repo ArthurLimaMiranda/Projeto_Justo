@@ -1,8 +1,9 @@
-import "./styles.css";
+
+import CardsStyle from "./style.module.css";
 
 export function Card(props) {
   return (
-    <div className="card">
+    <div className={CardsStyle.card}>
      <strong> {props.valor}</strong>
      <p></p>
       <strong>{props.parcelas}</strong>
